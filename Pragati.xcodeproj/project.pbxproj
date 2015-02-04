@@ -17,8 +17,8 @@
 		10C5E43C1A8078890071C934 /* AsanaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */; };
 		10C5E43E1A8078C80071C934 /* Asana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43D1A8078C80071C934 /* Asana.swift */; };
 		10C5E4401A80794C0071C934 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43F1A80794C0071C934 /* SampleData.swift */; };
-		10C5E4421A8080240071C934 /* downwardFacingDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4411A8080240071C934 /* downwardFacingDog.png */; };
 		10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4431A81BBAB0071C934 /* AsanaCell.swift */; };
+		10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4621A81D0340071C934 /* downwardFacingDog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaTableViewController.swift; sourceTree = "<group>"; };
 		10C5E43D1A8078C80071C934 /* Asana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asana.swift; sourceTree = "<group>"; };
 		10C5E43F1A80794C0071C934 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		10C5E4411A8080240071C934 /* downwardFacingDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downwardFacingDog.png; sourceTree = "<group>"; };
 		10C5E4431A81BBAB0071C934 /* AsanaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaCell.swift; sourceTree = "<group>"; };
+		10C5E4621A81D0340071C934 /* downwardFacingDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downwardFacingDog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				10C5E41B1A8072800071C934 /* FirstViewController.swift */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
 				10C5E41F1A8072800071C934 /* Main.storyboard */,
-				10C5E4411A8080240071C934 /* downwardFacingDog.png */,
+				10C5E4611A81D0340071C934 /* Resources */,
 				10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */,
 				10C5E43D1A8078C80071C934 /* Asana.swift */,
 				10C5E4431A81BBAB0071C934 /* AsanaCell.swift */,
@@ -128,6 +128,14 @@
 				10C5E4301A8072810071C934 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10C5E4611A81D0340071C934 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10C5E4621A81D0340071C934 /* downwardFacingDog.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10C5E4211A8072800071C934 /* Main.storyboard in Resources */,
-				10C5E4421A8080240071C934 /* downwardFacingDog.png in Resources */,
 				10C5E4261A8072800071C934 /* LaunchScreen.xib in Resources */,
+				10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */,
 				10C5E4231A8072800071C934 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
