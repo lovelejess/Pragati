@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Second View Controller-->
@@ -86,30 +87,46 @@
         <scene sceneID="rmR-fg-uEj">
             <objects>
                 <tableViewController title="Asanas" id="m8p-RU-EtY" customClass="AsanaTableViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nMj-jn-sTH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="nMj-jn-sTH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="AsanaCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AsanaCell" textLabel="fvv-pt-Ovz" detailTextLabel="uxZ-u4-ywF" style="IBUITableViewCellStyleSubtitle" id="a2t-HN-zCO" userLabel="AsanaCell">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="AsanaCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AsanaCell" textLabel="fvv-pt-Ovz" detailTextLabel="uxZ-u4-ywF" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="a2t-HN-zCO" userLabel="AsanaCell" customClass="AsanaCell" customModule="Pragati" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a2t-HN-zCO" id="vHC-y5-jWQ">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvv-pt-Ovz">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sanskrit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fvv-pt-Ovz">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uxZ-u4-ywF">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtR-Sd-7Qb">
+                                            <rect key="frame" x="461" y="0.0" width="85" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="omh-AF-aLW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="English" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uxZ-u4-ywF">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="XtR-Sd-7Qb" secondAttribute="bottom" constant="-7" id="NkI-fN-gMV"/>
+                                        <constraint firstItem="XtR-Sd-7Qb" firstAttribute="top" secondItem="vHC-y5-jWQ" secondAttribute="top" id="f3H-Sl-hXk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="XtR-Sd-7Qb" secondAttribute="trailing" constant="13" id="ghI-jF-Rg6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="asanaImage" destination="XtR-Sd-7Qb" id="b6J-aa-sCX"/>
+                                    <outlet property="englishLabel" destination="uxZ-u4-ywF" id="hbf-rS-tSe"/>
+                                    <outlet property="sanskritLabel" destination="fvv-pt-Ovz" id="sVS-0u-hJk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -121,7 +138,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-j1-gZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="-308"/>
+            <point key="canvasLocation" x="1449" y="-314"/>
         </scene>
     </scenes>
 </document>

@@ -44,6 +44,7 @@ class AsanaTableViewController: UITableViewController {
         let asana = asanas[indexPath.row] as Asana
         asanaCell.textLabel?.text = asana.sanskrit
         asanaCell.detailTextLabel?.text = asana.english
+        asanaCell.imageView?.image = asana.asanaImage
         return asanaCell
     }
 

@@ -8,13 +8,16 @@
 
 import UIKit
 
+@objc
 class Asana: NSObject {
     var sanskrit: String
     var english: String
+    var asanaImage: UIImage?
     
-    init(sanskrit: String, english:String){
+    init(sanskrit: String, english:String, asanaImage: UIImage?){
         self.sanskrit = sanskrit
         self.english = english
+        self.asanaImage = asanaImage
         super.init()
         
     }
