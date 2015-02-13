@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 LoveLeJess. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class AsanaTableViewController: UITableViewController {
@@ -46,6 +47,16 @@ class AsanaTableViewController: UITableViewController {
         asanaCell.detailTextLabel?.text = asana.english
         asanaCell.imageView?.image = asana.asanaImage
         return asanaCell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let asanaSelected = asanas[indexPath.row]
+        selectAsana(asanaSelected)
+    }
+    
+    func selectAsana(asanaSelected: Asana){
+        
     }
 
     /*
