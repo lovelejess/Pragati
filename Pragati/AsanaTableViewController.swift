@@ -52,11 +52,20 @@ class AsanaTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         let asanaSelected = asanas[indexPath.row]
-        selectAsana(asanaSelected)
     }
     
-    func selectAsana(asanaSelected: Asana){
-        
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DisplayAsanaSegue" {
+            if let destination = segue.destinationViewController as? AsanaImageViewController {
+                if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
+                    destination.asanaImage = asanas[asanaIndex].asanaImage!
+                    destination.sanskrit = asanas[asanaIndex].sanskrit
+                    destination.english = asanas[asanaIndex].english
+                    
+                }
+            }
+        }
     }
 
     /*

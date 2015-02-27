@@ -133,7 +133,7 @@
                                     <outlet property="asanaImage" destination="XtR-Sd-7Qb" id="b6J-aa-sCX"/>
                                     <outlet property="englishLabel" destination="uxZ-u4-ywF" id="hbf-rS-tSe"/>
                                     <outlet property="sanskritLabel" destination="fvv-pt-Ovz" id="sVS-0u-hJk"/>
-                                    <segue destination="4OJ-FD-987" kind="show" id="bWY-LZ-Upa"/>
+                                    <segue destination="4OJ-FD-987" kind="show" identifier="DisplayAsanaSegue" id="bWY-LZ-Upa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -178,6 +178,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="asanaSegueImageView" destination="vwD-IH-000" id="RFJ-bP-NST"/>
+                        <outlet property="englishSegue" destination="mbR-OP-Zir" id="ILN-mi-4mI"/>
+                        <outlet property="sanskritSegue" destination="d4G-lL-wat" id="lJ1-kD-2qO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYG-JY-Mx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
