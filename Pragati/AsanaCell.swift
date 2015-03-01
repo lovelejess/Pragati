@@ -12,5 +12,5 @@ class AsanaCell: UITableViewCell {
     
     @IBOutlet weak var sanskritLabel: UILabel!
     @IBOutlet weak var englishLabel: UILabel!
-    @IBOutlet weak var asanaImage: UIImageView!
+    @IBOutlet weak var defaultImage: UIImageView!
 }

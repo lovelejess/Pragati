@@ -130,7 +130,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="asanaImage" destination="XtR-Sd-7Qb" id="b6J-aa-sCX"/>
+                                    <outlet property="defaultImage" destination="XtR-Sd-7Qb" id="bEc-tc-h0q"/>
                                     <outlet property="englishLabel" destination="uxZ-u4-ywF" id="hbf-rS-tSe"/>
                                     <outlet property="sanskritLabel" destination="fvv-pt-Ovz" id="sVS-0u-hJk"/>
                                     <segue destination="4OJ-FD-987" kind="show" identifier="DisplayAsanaSegue" id="bWY-LZ-Upa"/>
@@ -173,13 +173,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downwardFacingDog.png" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-IH-000">
-                                <rect key="frame" x="6" y="72" width="60" height="44"/>
+                                <rect key="frame" x="21" y="72" width="45" height="39"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="asanaSegueImageView" destination="vwD-IH-000" id="RFJ-bP-NST"/>
+                        <outlet property="defaultImageSegue" destination="vwD-IH-000" id="znp-jU-0b2"/>
                         <outlet property="englishSegue" destination="mbR-OP-Zir" id="ILN-mi-4mI"/>
                         <outlet property="sanskritSegue" destination="d4G-lL-wat" id="lJ1-kD-2qO"/>
                     </connections>

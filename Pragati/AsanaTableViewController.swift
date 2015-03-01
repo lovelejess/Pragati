@@ -45,21 +45,15 @@ class AsanaTableViewController: UITableViewController {
         let asana = asanas[indexPath.row] as Asana
         asanaCell.textLabel?.text = asana.sanskrit
         asanaCell.detailTextLabel?.text = asana.english
-        asanaCell.imageView?.image = asana.asanaImage
+        asanaCell.imageView?.image = asana.defaultImage
         return asanaCell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
-    {
-        let asanaSelected = asanas[indexPath.row]
-    }
-    
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DisplayAsanaSegue" {
             if let destination = segue.destinationViewController as? AsanaImageViewController {
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
-                    destination.asanaImage = asanas[asanaIndex].asanaImage!
+                    destination.defaultImage = asanas[asanaIndex].defaultImage!
                     destination.sanskrit = asanas[asanaIndex].sanskrit
                     destination.english = asanas[asanaIndex].english
                     
