@@ -53,9 +53,10 @@ class AsanaTableViewController: UITableViewController {
         if segue.identifier == "DisplayUserAsanaPhotos" {
             if let destination = segue.destinationViewController as? AsanaImageViewController {
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
-                    destination.defaultImage = asanas[asanaIndex].defaultImage!
                     destination.sanskrit = asanas[asanaIndex].sanskrit
-                    destination.english = asanas[asanaIndex].english
+                    //destination.defaultImage = asanas[asanaIndex].defaultImage!
+                    //destination.sanskrit = asanas[asanaIndex].sanskrit
+                    //destination.english = asanas[asanaIndex].english
                     
                 }
             }

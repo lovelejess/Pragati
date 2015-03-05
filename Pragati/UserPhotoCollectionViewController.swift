@@ -11,7 +11,9 @@ import UIKit
 let reuseIdentifier = "UserPhotoCell"
 
 class UserPhotoCollectionViewController: UICollectionViewController {
-
+    
+    var asanas: [Asana] = asanaData
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,20 +45,19 @@ class UserPhotoCollectionViewController: UICollectionViewController {
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
-        return 0
+        return asanas.count
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 0
+        return 5
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as UICollectionViewCell
-    
+        
         // Configure the cell
-    
         return cell
     }
 

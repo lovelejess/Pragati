@@ -21,6 +21,7 @@
 		10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4681A81D4B20071C934 /* FirstViewController.swift */; };
 		10C5E46B1A8DA5CF0071C934 /* AsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */; };
 		10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */; };
+		10C712A21AA8F8C2003CAE20 /* AsanaPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A11AA8F8C2003CAE20 /* AsanaPhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		10C5E4681A81D4B20071C934 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaImageViewController.swift; sourceTree = "<group>"; };
 		10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		10C712A11AA8F8C2003CAE20 /* AsanaPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				10C5E4241A8072800071C934 /* LaunchScreen.xib */,
 				10C5E4171A8072800071C934 /* Supporting Files */,
 				10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */,
+				10C712A11AA8F8C2003CAE20 /* AsanaPhotoCollectionViewCell.swift */,
 			);
 			path = Pragati;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				10C5E4401A80794C0071C934 /* SampleData.swift in Sources */,
 				10C5E43E1A8078C80071C934 /* Asana.swift in Sources */,
 				10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */,
+				10C712A21AA8F8C2003CAE20 /* AsanaPhotoCollectionViewCell.swift in Sources */,
 				10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */,
 				10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */,
 				10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */,
