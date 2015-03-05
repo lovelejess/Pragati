@@ -50,7 +50,7 @@ class AsanaTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "DisplayAsanaSegue" {
+        if segue.identifier == "DisplayUserAsanaPhotos" {
             if let destination = segue.destinationViewController as? AsanaImageViewController {
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
                     destination.defaultImage = asanas[asanaIndex].defaultImage!
