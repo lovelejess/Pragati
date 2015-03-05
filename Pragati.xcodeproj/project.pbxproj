@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1047D7CC1AA5423700BB1AB3 /* AsanaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1047D7CB1AA5423700BB1AB3 /* AsanaCollectionViewController.swift */; };
 		10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4191A8072800071C934 /* AppDelegate.swift */; };
 		10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E41D1A8072800071C934 /* SecondViewController.swift */; };
 		10C5E4211A8072800071C934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E41F1A8072800071C934 /* Main.storyboard */; };
@@ -19,7 +20,7 @@
 		10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4431A81BBAB0071C934 /* AsanaCell.swift */; };
 		10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4621A81D0340071C934 /* downwardFacingDog.png */; };
 		10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4681A81D4B20071C934 /* FirstViewController.swift */; };
-		10C5E46B1A8DA5CF0071C934 /* AsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */; };
+		10C7129A1AA7E4BE003CAE20 /* UserAsanaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712991AA7E4BE003CAE20 /* UserAsanaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1047D7CB1AA5423700BB1AB3 /* AsanaCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaCollectionViewController.swift; sourceTree = "<group>"; };
 		10C5E4141A8072800071C934 /* Pragati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pragati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C5E4181A8072800071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C5E4191A8072800071C934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		10C5E4431A81BBAB0071C934 /* AsanaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaCell.swift; sourceTree = "<group>"; };
 		10C5E4621A81D0340071C934 /* downwardFacingDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downwardFacingDog.png; sourceTree = "<group>"; };
 		10C5E4681A81D4B20071C934 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaImageViewController.swift; sourceTree = "<group>"; };
+		10C712991AA7E4BE003CAE20 /* UserAsanaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserAsanaCollectionViewCell.swift; path = ../UserAsanaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		10C5E4161A8072800071C934 /* Pragati */ = {
 			isa = PBXGroup;
 			children = (
+				10C712991AA7E4BE003CAE20 /* UserAsanaCollectionViewCell.swift */,
 				10C5E4681A81D4B20071C934 /* FirstViewController.swift */,
 				10C5E4191A8072800071C934 /* AppDelegate.swift */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
@@ -103,7 +106,7 @@
 				10C5E4221A8072800071C934 /* Images.xcassets */,
 				10C5E4241A8072800071C934 /* LaunchScreen.xib */,
 				10C5E4171A8072800071C934 /* Supporting Files */,
-				10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */,
+				1047D7CB1AA5423700BB1AB3 /* AsanaCollectionViewController.swift */,
 			);
 			path = Pragati;
 			sourceTree = "<group>";
@@ -245,11 +248,12 @@
 				10C5E43C1A8078890071C934 /* AsanaTableViewController.swift in Sources */,
 				10C5E4401A80794C0071C934 /* SampleData.swift in Sources */,
 				10C5E43E1A8078C80071C934 /* Asana.swift in Sources */,
+				1047D7CC1AA5423700BB1AB3 /* AsanaCollectionViewController.swift in Sources */,
 				10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */,
 				10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */,
 				10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */,
 				10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */,
-				10C5E46B1A8DA5CF0071C934 /* AsanaImageViewController.swift in Sources */,
+				10C7129A1AA7E4BE003CAE20 /* UserAsanaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

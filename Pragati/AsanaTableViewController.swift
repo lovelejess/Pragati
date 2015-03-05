@@ -50,14 +50,16 @@ class AsanaTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "DisplayAsanaSegue" {
-            if let destination = segue.destinationViewController as? AsanaImageViewController {
+        if segue.identifier == "DisplayAsanaCollection" {
+            if let destination = segue.destinationViewController as? AsanaCollectionViewController {
+                destination.
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
-                    destination.defaultImage = asanas[asanaIndex].defaultImage!
-                    destination.sanskrit = asanas[asanaIndex].sanskrit
-                    destination.english = asanas[asanaIndex].english
+//                    destination.defaultImage = asanas[asanaIndex].defaultImage!
+//                    destination.sanskrit = asanas[asanaIndex].sanskrit
+//                    destination.english = asanas[asanaIndex].english
                     
                 }
+ 
             }
         }
     }

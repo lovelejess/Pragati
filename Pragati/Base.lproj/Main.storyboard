@@ -133,7 +133,7 @@
                                     <outlet property="defaultImage" destination="XtR-Sd-7Qb" id="bEc-tc-h0q"/>
                                     <outlet property="englishLabel" destination="uxZ-u4-ywF" id="hbf-rS-tSe"/>
                                     <outlet property="sanskritLabel" destination="fvv-pt-Ovz" id="sVS-0u-hJk"/>
-                                    <segue destination="4OJ-FD-987" kind="show" identifier="DisplayAsanaSegue" id="bWY-LZ-Upa"/>
+                                    <segue destination="abv-B3-sMX" kind="show" identifier="DisplayAsanaCollection" id="5f5-vK-Usg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -146,47 +146,51 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-j1-gZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="-314"/>
+            <point key="canvasLocation" x="1383" y="-336"/>
         </scene>
-        <!--Asana Image View Controller-->
-        <scene sceneID="6pE-mA-ngY">
+        <!--Asana Collection View Controller-->
+        <scene sceneID="3Em-Pn-EPv">
             <objects>
-                <viewController id="4OJ-FD-987" customClass="AsanaImageViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PYg-2Q-mGl"/>
-                        <viewControllerLayoutGuide type="bottom" id="ygY-D8-5pQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NUL-p6-k73">
+                <collectionViewController id="abv-B3-sMX" userLabel="Asana Collection View Controller" customClass="AsanaCollectionViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="at9-fw-6F5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sanskrit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-lL-wat">
-                                <rect key="frame" x="74" y="72" width="306" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="English" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbR-OP-Zir">
-                                <rect key="frame" x="84" y="90" width="329" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downwardFacingDog.png" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-IH-000">
-                                <rect key="frame" x="21" y="72" width="45" height="39"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="defaultImageSegue" destination="vwD-IH-000" id="znp-jU-0b2"/>
-                        <outlet property="englishSegue" destination="mbR-OP-Zir" id="ILN-mi-4mI"/>
-                        <outlet property="sanskritSegue" destination="d4G-lL-wat" id="lJ1-kD-2qO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UYG-JY-Mx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dPq-dr-nzn">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserAsanaPhotoCell" id="tKU-iN-dN5" customClass="UserAsanaCollectionViewCell" customModule="Pragati" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downwardFacingDog.png" translatesAutoresizingMaskIntoConstraints="NO" id="un7-Nk-sFe">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="userImage" destination="un7-Nk-sFe" id="dES-KF-9ip"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="abv-B3-sMX" id="YIa-gE-D4y"/>
+                            <outlet property="delegate" destination="abv-B3-sMX" id="Kky-uy-0hF"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HET-eD-GLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="-320"/>
+            <point key="canvasLocation" x="2046" y="-311"/>
         </scene>
     </scenes>
     <resources>
