@@ -9,6 +9,6 @@
 import UIKit
 
 class AsanaPhotoCollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var tempLabel: UILabel!
+
+    @IBOutlet weak var tempImage: UIImageView!
 }
