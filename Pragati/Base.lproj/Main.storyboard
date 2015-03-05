@@ -133,7 +133,7 @@
                                     <outlet property="defaultImage" destination="XtR-Sd-7Qb" id="bEc-tc-h0q"/>
                                     <outlet property="englishLabel" destination="uxZ-u4-ywF" id="hbf-rS-tSe"/>
                                     <outlet property="sanskritLabel" destination="fvv-pt-Ovz" id="sVS-0u-hJk"/>
-                                    <segue destination="abv-B3-sMX" kind="show" identifier="DisplayAsanaCollection" id="5f5-vK-Usg"/>
+                                    <segue destination="hvO-1D-vOS" kind="show" identifier="DisplayUserAsanaPhotos" id="hIT-J4-diM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -190,7 +190,50 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HET-eD-GLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="-311"/>
+            <point key="canvasLocation" x="2824" y="-320"/>
+        </scene>
+        <!--User Photo Collection View Controller-->
+        <scene sceneID="ATf-2R-q6K">
+            <objects>
+                <collectionViewController id="hvO-1D-vOS" customClass="UserPhotoCollectionViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NrI-hd-vkP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="21N-JN-566">
+                            <size key="itemSize" width="75" height="95"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserPhotoCell" id="JL0-R0-bdg" customClass="AsanaPhotoCollectionViewCell" customModule="Pragati" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="95"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-rh-F6c">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="tempImage" destination="qU4-rh-F6c" id="GCB-xo-CQE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hvO-1D-vOS" id="S0z-RY-zlP"/>
+                            <outlet property="delegate" destination="hvO-1D-vOS" id="QSw-KJ-Ndq"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyR-2F-TtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="-306"/>
         </scene>
     </scenes>
     <resources>
