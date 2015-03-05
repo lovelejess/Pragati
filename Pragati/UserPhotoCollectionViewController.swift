@@ -8,20 +8,17 @@
 
 import UIKit
 
-let reuseIdentifier = "UserPhotoCell"
-
 class UserPhotoCollectionViewController: UICollectionViewController {
     
     var asanas: [Asana] = asanaData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -55,10 +52,10 @@ class UserPhotoCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UICollectionViewCell
+        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as AsanaPhotoCollectionViewCell
 
         // Configure the cell
-        userPhotoCell.backgroundColor = UIColor.blueColor()
+        userPhotoCell.tempImage?.image = UIImage(named: "downwardFacingDog")
         return userPhotoCell
     }
 
