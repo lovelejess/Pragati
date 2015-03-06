@@ -61,9 +61,10 @@ class UserPhotoCollectionViewController: UICollectionViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SelectedAsanaPhoto" {
             if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {
+                
                 if let asanaIndex = collectionView?.indexPathForCell(sender as UICollectionViewCell){
                     
-                    //destination.selectedUserPhoto.image = UIImage(named: "downwardFacingDog")
+                    //destination.selectedUserPhoto?.image = UIImage(named: "downwardFacingDog")
                     //destination.defaultImage = asanas[asanaIndex].defaultImage!
                     //destination.sanskrit = asanas[asanaIndex].sanskrit
                     //destination.english = asanas[asanaIndex].english

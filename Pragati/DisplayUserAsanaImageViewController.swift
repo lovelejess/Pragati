@@ -26,7 +26,8 @@ class DisplayUserAsanaImageViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        selectedUserPhoto.image = defaultImage
+        selectedUserPhoto.image = UIImage(named: "downwardFacingDog")
+
     }
 
     /*
