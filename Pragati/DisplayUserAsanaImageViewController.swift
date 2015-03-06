@@ -12,8 +12,6 @@ class DisplayUserAsanaImageViewController: UIViewController {
     
     @IBOutlet weak var selectedUserPhoto: UIImageView!
     
-    var defaultImage = UIImage()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

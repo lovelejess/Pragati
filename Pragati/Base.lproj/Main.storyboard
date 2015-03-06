@@ -198,11 +198,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="txN-kn-nqK">
-                                <rect key="frame" x="100" y="100" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="txN-kn-nqK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="txN-kn-nqK" firstAttribute="leading" secondItem="tB6-g0-hRY" secondAttribute="leading" id="77V-6C-YlM"/>
+                            <constraint firstItem="txN-kn-nqK" firstAttribute="bottom" secondItem="6rS-QA-oD4" secondAttribute="top" id="J7P-9W-ckl"/>
+                            <constraint firstAttribute="trailing" secondItem="txN-kn-nqK" secondAttribute="trailing" id="Ood-fR-sGU"/>
+                            <constraint firstItem="txN-kn-nqK" firstAttribute="top" secondItem="sy9-l2-P9g" secondAttribute="bottom" id="XBX-iE-IEX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="selectedUserPhoto" destination="txN-kn-nqK" id="MHn-Hf-V59"/>
