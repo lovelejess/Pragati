@@ -25,7 +25,7 @@ class UserPhotoCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -46,7 +46,7 @@ class UserPhotoCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 50
+        return 30
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -55,6 +55,22 @@ class UserPhotoCollectionViewController: UICollectionViewController {
         // Configure the cell
         userPhotoCell.tempImage?.image = UIImage(named: "downwardFacingDog")
         return userPhotoCell
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SelectedAsanaPhoto" {
+            if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {
+                if let asanaIndex = collectionView?.indexPathForCell(sender as UICollectionViewCell){
+                    
+                    //destination.selectedUserPhoto.image = UIImage(named: "downwardFacingDog")
+                    //destination.defaultImage = asanas[asanaIndex].defaultImage!
+                    //destination.sanskrit = asanas[asanaIndex].sanskrit
+                    //destination.english = asanas[asanaIndex].english
+                    
+                }
+            }
+        }
     }
 
     // MARK: UICollectionViewDelegate
