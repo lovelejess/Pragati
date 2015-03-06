@@ -91,13 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asana Base List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zdi-up-d5G">
-                            <rect key="frame" x="0.0" y="-21" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="AsanaCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AsanaCell" textLabel="fvv-pt-Ovz" detailTextLabel="uxZ-u4-ywF" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="a2t-HN-zCO" userLabel="AsanaCell" customClass="AsanaCell" customModule="Pragati" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -142,7 +135,7 @@
                             <outlet property="delegate" destination="m8p-RU-EtY" id="skv-YQ-GYK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hu8-EQ-OCL"/>
+                    <navigationItem key="navigationItem" title="Asanas List" id="hu8-EQ-OCL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-j1-gZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,7 +185,7 @@
             </objects>
             <point key="canvasLocation" x="2824" y="-320"/>
         </scene>
-        <!--User Photo Collection View Controller-->
+        <!--Title-->
         <scene sceneID="ATf-2R-q6K">
             <objects>
                 <collectionViewController id="hvO-1D-vOS" customClass="UserPhotoCollectionViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
@@ -230,6 +223,7 @@
                             <outlet property="delegate" destination="hvO-1D-vOS" id="QSw-KJ-Ndq"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyR-2F-TtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

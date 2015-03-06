@@ -11,6 +11,4 @@ import UIKit
 class AsanaPhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var tempImage: UIImageView!
-    let weeeee:String!
-    let imageView: UIImageView!
 }
