@@ -64,7 +64,7 @@ class UserPhotoCollectionViewController: UICollectionViewController {
             
                 let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
                 
-                //destination.userPhoto = photoCell.tempImage.image!
+                destination.userPhoto = photoCell.tempImage.image!
 
             }
         }

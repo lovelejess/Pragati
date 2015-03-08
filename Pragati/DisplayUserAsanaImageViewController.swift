@@ -12,6 +12,8 @@ class DisplayUserAsanaImageViewController: UIViewController {
     
     @IBOutlet weak var selectedUserPhoto: UIImageView!
     
+    var userPhoto = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +26,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        selectedUserPhoto.image = UIImage(named: "hdstd-rockies.JPG")
+        selectedUserPhoto.image = userPhoto
 
     }
 
