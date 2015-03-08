@@ -1,5 +1,5 @@
 //
-//  AsanaPhotoCollectionViewCell.swift
+//  UserPhotoCollectionViewCell.swift
 //  Pragati
 //
 //  Created by Jessica Le on 3/5/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AsanaPhotoCollectionViewCell: UICollectionViewCell {
+class UserPhotoCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var tempImage: UIImageView!
 }

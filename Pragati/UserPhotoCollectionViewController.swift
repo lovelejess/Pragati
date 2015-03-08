@@ -50,10 +50,10 @@ class UserPhotoCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as AsanaPhotoCollectionViewCell
+        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
 
         // Configure the cell
-        userPhotoCell.tempImage?.image = UIImage(named: "downwardFacingDog")
+        userPhotoCell.tempImage?.image = UIImage(named: "hdstd-rockies.JPG")
         return userPhotoCell
         
     }
@@ -61,9 +61,11 @@ class UserPhotoCollectionViewController: UICollectionViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SelectedAsanaPhoto" {
             if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {
+            
+                let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
                 
-                if let asanaIndex = collectionView?.indexPathForCell(sender as UICollectionViewCell){
-                }
+                //destination.userPhoto = photoCell.tempImage.image!
+
             }
         }
     }
