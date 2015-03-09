@@ -103,8 +103,8 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtR-Sd-7Qb">
-                                            <rect key="frame" x="461" y="0.0" width="85" height="50"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XtR-Sd-7Qb">
+                                            <rect key="frame" x="461" y="0.0" width="85" height="53"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="85" id="omh-AF-aLW"/>
                                             </constraints>
@@ -180,7 +180,16 @@
                             <outlet property="delegate" destination="hvO-1D-vOS" id="QSw-KJ-Ndq"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh"/>
+                    <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
+                            <connections>
+                                <segue destination="Eta-VZ-ClR" kind="presentation" id="RgO-hU-muT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addUserPhotoButton" destination="EZE-yz-slZ" id="HIX-IB-SVh"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyR-2F-TtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,6 +226,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w0A-1k-Zaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2812" y="-312"/>
+        </scene>
+        <!--Add User Photo View Controller-->
+        <scene sceneID="xr4-gC-sYf">
+            <objects>
+                <viewController id="Eta-VZ-ClR" customClass="AddUserPhotoViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZmF-3o-tah"/>
+                        <viewControllerLayoutGuide type="bottom" id="HwO-z8-j8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XgM-dm-NHd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-iO-rqD">
+                                <rect key="frame" x="-2" y="20" width="605" height="44"/>
+                                <items>
+                                    <navigationItem title="Add a Photo" id="erA-ho-Vpc">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LNE-dX-ZsG">
+                                            <connections>
+                                                <action selector="cancelButton:" destination="Eta-VZ-ClR" id="Okb-KP-Dj6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="top" secondItem="XgM-dm-NHd" secondAttribute="top" constant="20" id="dN3-vL-B3b"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="centerX" secondItem="XgM-dm-NHd" secondAttribute="centerX" id="tqG-B9-LpJ"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="leading" secondItem="XgM-dm-NHd" secondAttribute="leadingMargin" constant="-18" id="ugb-rz-Mpo"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="LNE-dX-ZsG" id="PXx-Uc-Txg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMx-gu-6Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2335" y="430"/>
         </scene>
     </scenes>
 </document>

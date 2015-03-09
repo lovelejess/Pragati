@@ -10,6 +10,7 @@
 		1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */; };
 		1014755F1AAB45C700EB3239 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1014755E1AAB45C600EB3239 /* wheel.png */; };
 		101475611AAB48BC00EB3239 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 101475601AAB48BC00EB3239 /* triangle.png */; };
+		101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */; };
 		10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4191A8072800071C934 /* AppDelegate.swift */; };
 		10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E41D1A8072800071C934 /* SecondViewController.swift */; };
 		10C5E4211A8072800071C934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E41F1A8072800071C934 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hdstd-rockies.JPG"; sourceTree = "<group>"; };
 		1014755E1AAB45C600EB3239 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
 		101475601AAB48BC00EB3239 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = Resources/triangle.png; sourceTree = "<group>"; };
+		101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserPhotoViewController.swift; sourceTree = "<group>"; };
 		10C5E4141A8072800071C934 /* Pragati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pragati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C5E4181A8072800071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C5E4191A8072800071C934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				10C5E4191A8072800071C934 /* AppDelegate.swift */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
 				10C5E41F1A8072800071C934 /* Main.storyboard */,
+				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
 				10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */,
 				10C5E4611A81D0340071C934 /* Resources */,
 				10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */,
@@ -272,6 +275,7 @@
 				10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */,
 				10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */,
 				10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */,
+				101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
