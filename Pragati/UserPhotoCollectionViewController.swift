@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,15 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         
     }
     
+    @IBAction func cameraRoll(sender: AnyObject) {
+        picker.allowsEditing = false
+        picker.sourceType = .PhotoLibrary
+        picker.modalPresentationStyle = .Popover
+        presentViewController(picker, animated: true, completion: nil)
+    }
+    
+
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SelectedAsanaPhoto" {
             if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {

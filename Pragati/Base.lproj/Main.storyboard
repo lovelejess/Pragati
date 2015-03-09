@@ -183,7 +183,7 @@
                     <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
                             <connections>
-                                <segue destination="Eta-VZ-ClR" kind="presentation" id="RgO-hU-muT"/>
+                                <action selector="cameraRoll:" destination="hvO-1D-vOS" id="n2q-NX-BCn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

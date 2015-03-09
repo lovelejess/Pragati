@@ -28,6 +28,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         selectedUserPhoto.image = userPhoto
 
+
     }
 
     /*
