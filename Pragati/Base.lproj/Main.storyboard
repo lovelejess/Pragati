@@ -183,7 +183,7 @@
                     <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
                             <connections>
-                                <action selector="cameraRoll:" destination="hvO-1D-vOS" id="n2q-NX-BCn"/>
+                                <segue destination="Eta-VZ-ClR" kind="presentation" id="tXX-lo-svc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -248,6 +248,11 @@
                                                 <action selector="cancelButton:" destination="Eta-VZ-ClR" id="Okb-KP-Dj6"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="NMg-vb-rFg">
+                                            <connections>
+                                                <action selector="cameraRoll:" destination="Eta-VZ-ClR" id="G7u-yk-doR"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -267,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMx-gu-6Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2335" y="430"/>
+            <point key="canvasLocation" x="2136" y="414"/>
         </scene>
     </scenes>
 </document>

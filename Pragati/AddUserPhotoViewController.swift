@@ -11,6 +11,7 @@ import UIKit
 class AddUserPhotoViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIBarButtonItem!
+    let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,12 @@ class AddUserPhotoViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func cameraRoll(sender: AnyObject) {
+        picker.allowsEditing = false
+        picker.sourceType = .PhotoLibrary
+        picker.modalPresentationStyle = .Popover
+        presentViewController(picker, animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

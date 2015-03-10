@@ -56,8 +56,6 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         picker.modalPresentationStyle = .Popover
         presentViewController(picker, animated: true, completion: nil)
     }
-    
-
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SelectedAsanaPhoto" {
