@@ -8,23 +8,31 @@
 
 import UIKit
 
-class AddUserPhotoViewController: UIViewController {
+class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var capturePhotoButton: UIBarButtonItem!
+    @IBOutlet weak var selectedPhoto: UIImageView!
     
     let picker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        picker.delegate = self
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        selectedPhoto.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        selectedPhoto.contentMode = .ScaleAspectFit
+        dismissViewControllerAnimated(true, completion: nil)
+        
     }
 
     @IBAction func cancelButton(sender: UIStoryboardSegue){

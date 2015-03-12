@@ -267,17 +267,24 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-I8-8xa">
+                                <rect key="frame" x="0.0" y="64" width="598" height="453"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e7d-9J-THW" firstAttribute="top" secondItem="HwO-z8-j8c" secondAttribute="bottom" constant="-39" id="5V7-rl-89X"/>
                             <constraint firstItem="hOi-iO-rqD" firstAttribute="top" secondItem="ZmF-3o-tah" secondAttribute="bottom" id="9IJ-Uf-lle"/>
+                            <constraint firstItem="ez8-I8-8xa" firstAttribute="top" secondItem="hOi-iO-rqD" secondAttribute="bottom" id="9US-DS-1z0"/>
+                            <constraint firstItem="ez8-I8-8xa" firstAttribute="leading" secondItem="XgM-dm-NHd" secondAttribute="leading" id="EBJ-mE-Wlq"/>
                             <constraint firstItem="e7d-9J-THW" firstAttribute="leading" secondItem="hOi-iO-rqD" secondAttribute="leading" id="J45-73-4k2"/>
                             <constraint firstItem="hOi-iO-rqD" firstAttribute="leading" secondItem="XgM-dm-NHd" secondAttribute="leadingMargin" constant="-18" id="OQw-kr-Md3"/>
                             <constraint firstItem="hOi-iO-rqD" firstAttribute="centerX" secondItem="XgM-dm-NHd" secondAttribute="centerX" id="fJK-is-Btz"/>
                             <constraint firstItem="HwO-z8-j8c" firstAttribute="top" secondItem="e7d-9J-THW" secondAttribute="bottom" constant="-5" id="k5Z-ju-xiB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e7d-9J-THW" secondAttribute="trailing" constant="-14" id="rfk-83-04h"/>
+                            <constraint firstItem="ez8-I8-8xa" firstAttribute="trailing" secondItem="e7d-9J-THW" secondAttribute="trailing" id="vu7-z0-nO6"/>
                             <constraint firstItem="hOi-iO-rqD" firstAttribute="topMargin" secondItem="ZmF-3o-tah" secondAttribute="bottom" id="x8d-ce-rLO"/>
+                            <constraint firstItem="ez8-I8-8xa" firstAttribute="bottom" secondItem="e7d-9J-THW" secondAttribute="top" id="zGs-gx-13b"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -285,6 +292,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="LNE-dX-ZsG" id="PXx-Uc-Txg"/>
                         <outlet property="capturePhotoButton" destination="K7R-LK-mF0" id="C05-lB-Yyu"/>
+                        <outlet property="selectedPhoto" destination="ez8-I8-8xa" id="hwU-iU-6Ne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMx-gu-6Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
