@@ -32,26 +32,24 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
         selectedPhoto.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         selectedPhoto.contentMode = .ScaleAspectFit
         dismissViewControllerAnimated(true, completion: nil)
-        
     }
 
     @IBAction func cancelButton(sender: UIStoryboardSegue){
-        // bug? exit segue doesn't dismiss so we do it manually...
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func cameraRoll(sender: AnyObject) {
-        picker.allowsEditing = false
         picker.sourceType = .PhotoLibrary
         picker.modalPresentationStyle = .Popover
+        picker.allowsEditing = false
         presentViewController(picker, animated: true, completion: nil)
     }
     
     @IBAction func capturePhoto(sender: UIBarButtonItem) {
         if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
-            picker.allowsEditing = false
             picker.sourceType = UIImagePickerControllerSourceType.Camera
             picker.cameraCaptureMode = .Photo
+            picker.allowsEditing = false
             presentViewController(picker, animated: true, completion: nil)
         } else {
            cameraNotFound()
