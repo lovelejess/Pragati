@@ -11,6 +11,8 @@ import UIKit
 class AddUserPhotoViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var capturePhotoButton: UIBarButtonItem!
+    
     let picker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -37,6 +39,23 @@ class AddUserPhotoViewController: UIViewController {
         presentViewController(picker, animated: true, completion: nil)
     }
     
+    @IBAction func capturePhoto(sender: UIBarButtonItem) {
+        if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
+            picker.allowsEditing = false
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.cameraCaptureMode = .Photo
+            presentViewController(picker, animated: true, completion: nil)
+        } else {
+           cameraNotFound()
+        }
+    }
+    
+    func cameraNotFound(){
+        let alertPopUp = UIAlertController(title: "Error: No Camera Detected", message: "How am I supposed to capture a photo without a camera?!", preferredStyle: .Alert)
+        let dismissButton = UIAlertAction(title: "Oh, silly me!", style:.Default, handler: nil)
+        alertPopUp.addAction(dismissButton)
+        presentViewController(alertPopUp, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

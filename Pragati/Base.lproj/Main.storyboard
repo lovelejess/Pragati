@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -230,7 +231,7 @@
         <!--Add User Photo View Controller-->
         <scene sceneID="xr4-gC-sYf">
             <objects>
-                <viewController id="Eta-VZ-ClR" customClass="AddUserPhotoViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="Eta-VZ-ClR" customClass="AddUserPhotoViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZmF-3o-tah"/>
                         <viewControllerLayoutGuide type="bottom" id="HwO-z8-j8c"/>
@@ -239,7 +240,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-iO-rqD">
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-iO-rqD">
                                 <rect key="frame" x="-2" y="20" width="605" height="44"/>
                                 <items>
                                     <navigationItem title="Add a Photo" id="erA-ho-Vpc">
@@ -256,18 +257,34 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-9J-THW">
+                                <rect key="frame" x="-2" y="517" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="K7R-LK-mF0">
+                                        <connections>
+                                            <action selector="capturePhoto:" destination="Eta-VZ-ClR" id="aTO-Z3-624"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hOi-iO-rqD" firstAttribute="top" secondItem="XgM-dm-NHd" secondAttribute="top" constant="20" id="dN3-vL-B3b"/>
-                            <constraint firstItem="hOi-iO-rqD" firstAttribute="centerX" secondItem="XgM-dm-NHd" secondAttribute="centerX" id="tqG-B9-LpJ"/>
-                            <constraint firstItem="hOi-iO-rqD" firstAttribute="leading" secondItem="XgM-dm-NHd" secondAttribute="leadingMargin" constant="-18" id="ugb-rz-Mpo"/>
+                            <constraint firstItem="e7d-9J-THW" firstAttribute="top" secondItem="HwO-z8-j8c" secondAttribute="bottom" constant="-39" id="5V7-rl-89X"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="top" secondItem="ZmF-3o-tah" secondAttribute="bottom" id="9IJ-Uf-lle"/>
+                            <constraint firstItem="e7d-9J-THW" firstAttribute="leading" secondItem="hOi-iO-rqD" secondAttribute="leading" id="J45-73-4k2"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="leading" secondItem="XgM-dm-NHd" secondAttribute="leadingMargin" constant="-18" id="OQw-kr-Md3"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="centerX" secondItem="XgM-dm-NHd" secondAttribute="centerX" id="fJK-is-Btz"/>
+                            <constraint firstItem="HwO-z8-j8c" firstAttribute="top" secondItem="e7d-9J-THW" secondAttribute="bottom" constant="-5" id="k5Z-ju-xiB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e7d-9J-THW" secondAttribute="trailing" constant="-14" id="rfk-83-04h"/>
+                            <constraint firstItem="hOi-iO-rqD" firstAttribute="topMargin" secondItem="ZmF-3o-tah" secondAttribute="bottom" id="x8d-ce-rLO"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cancelButton" destination="LNE-dX-ZsG" id="PXx-Uc-Txg"/>
+                        <outlet property="capturePhotoButton" destination="K7R-LK-mF0" id="C05-lB-Yyu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMx-gu-6Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
