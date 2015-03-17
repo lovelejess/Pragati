@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */; };
 		1014755F1AAB45C700EB3239 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1014755E1AAB45C600EB3239 /* wheel.png */; };
-		101475611AAB48BC00EB3239 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 101475601AAB48BC00EB3239 /* triangle.png */; };
 		101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */; };
 		10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4191A8072800071C934 /* AppDelegate.swift */; };
 		10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E41D1A8072800071C934 /* SecondViewController.swift */; };
@@ -26,6 +25,7 @@
 		10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */; };
 		10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */; };
 		10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */; };
+		10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hdstd-rockies.JPG"; sourceTree = "<group>"; };
 		1014755E1AAB45C600EB3239 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
-		101475601AAB48BC00EB3239 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = Resources/triangle.png; sourceTree = "<group>"; };
 		101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserPhotoViewController.swift; sourceTree = "<group>"; };
 		10C5E4141A8072800071C934 /* Pragati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pragati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C5E4181A8072800071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUserAsanaImageViewController.swift; sourceTree = "<group>"; };
+		10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triangle.jpeg; path = ../triangle.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,6 @@
 				10C5E43D1A8078C80071C934 /* Asana.swift */,
 				10C5E4431A81BBAB0071C934 /* AsanaCell.swift */,
 				10C5E43F1A80794C0071C934 /* SampleData.swift */,
-				101475601AAB48BC00EB3239 /* triangle.png */,
 				10C5E4221A8072800071C934 /* Images.xcassets */,
 				10C5E4241A8072800071C934 /* LaunchScreen.xib */,
 				10C5E4171A8072800071C934 /* Supporting Files */,
@@ -154,6 +153,7 @@
 		10C5E4611A81D0340071C934 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */,
 				1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */,
 				1014755E1AAB45C600EB3239 /* wheel.png */,
 				10C5E4621A81D0340071C934 /* downwardFacingDog.png */,
@@ -210,6 +210,7 @@
 				TargetAttributes = {
 					10C5E4131A8072800071C934 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = N993RX34M3;
 					};
 					10C5E42A1A8072810071C934 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -246,8 +247,8 @@
 				10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */,
 				1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */,
 				10C5E4231A8072800071C934 /* Images.xcassets in Resources */,
-				101475611AAB48BC00EB3239 /* triangle.png in Resources */,
 				1014755F1AAB45C700EB3239 /* wheel.png in Resources */,
+				10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

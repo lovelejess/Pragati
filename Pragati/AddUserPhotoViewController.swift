@@ -13,6 +13,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var capturePhotoButton: UIBarButtonItem!
     @IBOutlet weak var selectedPhoto: UIImageView!
+    @IBOutlet weak var savePhotoButton: UIBarButtonItem!
     
     let picker = UIImagePickerController()
     
@@ -26,6 +27,23 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func savePhoto(){
+        var photoToSave: UIImage
+        photoToSave = selectedPhoto.image!
+        UIImageWriteToSavedPhotosAlbum(photoToSave, nil, nil, nil)
+        displaySuccessfullavePopUp()
+        
+    }
+    
+    func displaySuccessfullavePopUp(){
+        let successfullAlert = UIAlertController(title: "Photo Saved", message: "Successfully Saved!", preferredStyle: UIAlertControllerStyle.Alert)
+        let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default) { (action) -> Void in
+            }
+        successfullAlert.addAction(acknowledgedButton)
+        self.presentViewController(successfullAlert, animated: true, completion: nil)
+        
     }
     
      func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {

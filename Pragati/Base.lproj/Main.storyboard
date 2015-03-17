@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -265,6 +265,11 @@
                                             <action selector="capturePhoto:" destination="Eta-VZ-ClR" id="aTO-Z3-624"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="save" id="tWq-vx-f7l">
+                                        <connections>
+                                            <action selector="savePhoto" destination="Eta-VZ-ClR" id="1L6-Dj-t7I"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-I8-8xa">
@@ -292,6 +297,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="LNE-dX-ZsG" id="PXx-Uc-Txg"/>
                         <outlet property="capturePhotoButton" destination="K7R-LK-mF0" id="C05-lB-Yyu"/>
+                        <outlet property="savePhotoButton" destination="tWq-vx-f7l" id="98j-2D-jY5"/>
                         <outlet property="selectedPhoto" destination="ez8-I8-8xa" id="hwU-iU-6Ne"/>
                     </connections>
                 </viewController>
