@@ -13,3 +13,5 @@ let asanaData = [Asana(sanskrit: "Adho Mukha Svanasana", english: "Downward Faci
                 Asana(sanskrit: "Urdhva Dhanursana", english: "Upward Bow Pose", defaultImage: UIImage(named:"wheel.png")),
                 Asana(sanskrit: "Trikonasana (Left)", english: "Triangle (Left)", defaultImage: UIImage(named:"triangle.jpeg")),
                 Asana(sanskrit: "Trikonasana (Right)", english: "Triangle (Right)",defaultImage: UIImage(named:"triangle.jpeg"))]
+
+let asanaPhotos = [AsanaPhoto(date: NSDate(), photo: UIImage(named: "hdstd-rockies.JPG"))]

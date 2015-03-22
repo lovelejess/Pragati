@@ -11,6 +11,8 @@ import MobileCoreServices
 
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
+    var userPhoto: [AsanaPhoto] = asanaPhotos
+    
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
     
@@ -38,14 +40,14 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return userPhoto.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
 
         // Configure the cell
-        userPhotoCell.tempImage?.image = UIImage(named: "hdstd-rockies.JPG")
+        userPhotoCell.tempImage?.image = userPhoto[indexPath.row].photo
         return userPhotoCell
         
     }
