@@ -54,7 +54,9 @@ class AsanaTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? UserPhotoCollectionViewController {
                 
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
-                    destination.title = asanas[asanaIndex].english
+                    var asanaSelected = asanas[asanaIndex].english
+                    destination.title = asanaSelected
+                    destination.userPhoto = asanaMap[asanaSelected]!
                     //destination.defaultImage = asanas[asanaIndex].defaultImage!
                     //destination.sanskrit = asanas[asanaIndex].sanskrit
                     //destination.english = asanas[asanaIndex].english
@@ -63,6 +65,7 @@ class AsanaTableViewController: UITableViewController {
             }
         }
     }
+    
 
     /*
     // Override to support conditional editing of the table view.

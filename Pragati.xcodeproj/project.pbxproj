@@ -11,6 +11,7 @@
 		1014755F1AAB45C700EB3239 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1014755E1AAB45C600EB3239 /* wheel.png */; };
 		101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */; };
 		10C05E7D1ABF65B200BB7726 /* AsanaPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C05E7C1ABF65B200BB7726 /* AsanaPhoto.swift */; };
+		10C05E7F1ABF775600BB7726 /* hdstd-funkyLegs.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */; };
 		10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4191A8072800071C934 /* AppDelegate.swift */; };
 		10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E41D1A8072800071C934 /* SecondViewController.swift */; };
 		10C5E4211A8072800071C934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E41F1A8072800071C934 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		1014755E1AAB45C600EB3239 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
 		101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserPhotoViewController.swift; sourceTree = "<group>"; };
 		10C05E7C1ABF65B200BB7726 /* AsanaPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaPhoto.swift; sourceTree = "<group>"; };
+		10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hdstd-funkyLegs.JPG"; sourceTree = "<group>"; };
 		10C5E4141A8072800071C934 /* Pragati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pragati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C5E4181A8072800071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C5E4191A8072800071C934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		10C5E4611A81D0340071C934 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */,
 				10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */,
 				1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */,
 				1014755E1AAB45C600EB3239 /* wheel.png */,
@@ -251,6 +254,7 @@
 				1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */,
 				10C5E4231A8072800071C934 /* Images.xcassets in Resources */,
 				1014755F1AAB45C700EB3239 /* wheel.png in Resources */,
+				10C05E7F1ABF775600BB7726 /* hdstd-funkyLegs.JPG in Resources */,
 				10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import MobileCoreServices
 
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
-    var userPhoto: [AsanaPhoto] = asanaPhotos
+    var userPhoto: [AsanaPhoto] = defaultPhotos
     
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
