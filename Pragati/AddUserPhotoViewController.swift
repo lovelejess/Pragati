@@ -21,6 +21,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
         super.viewDidLoad()
 
         picker.delegate = self
+        savePhotoButton.enabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -50,6 +51,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
      func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         selectedPhoto.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         selectedPhoto.contentMode = .ScaleAspectFit
+        savePhotoButton.enabled = true
         dismissViewControllerAnimated(true, completion: nil)
     }
 
@@ -69,6 +71,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
             picker.sourceType = UIImagePickerControllerSourceType.Camera
             picker.cameraCaptureMode = .Photo
             picker.allowsEditing = false
+            
             presentViewController(picker, animated: true, completion: nil)
         } else {
            cameraNotFound()

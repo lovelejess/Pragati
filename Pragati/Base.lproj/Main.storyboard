@@ -244,7 +244,7 @@
                                 <rect key="frame" x="-2" y="20" width="605" height="44"/>
                                 <items>
                                     <navigationItem title="Add a Photo" id="erA-ho-Vpc">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LNE-dX-ZsG">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="LNE-dX-ZsG">
                                             <connections>
                                                 <action selector="cancelButton:" destination="Eta-VZ-ClR" id="Okb-KP-Dj6"/>
                                             </connections>
