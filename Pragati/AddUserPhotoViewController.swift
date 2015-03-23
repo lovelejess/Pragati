@@ -30,14 +30,15 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     }
     
     @IBAction func savePhoto(){
-        var photoToSave: UIImage
+        var photoToSave: UIImage?
         photoToSave = selectedPhoto.image!
-        UIImageWriteToSavedPhotosAlbum(photoToSave, nil, nil, nil)
-        displaySuccessfullavePopUp()
-        
+        if (photoToSave != nil) {
+            UIImageWriteToSavedPhotosAlbum(photoToSave, nil, nil, nil)
+            displaySuccessfullSavePopUp()
+        }
     }
     
-    func displaySuccessfullavePopUp(){
+    func displaySuccessfullSavePopUp(){
         let successfullAlert = UIAlertController(title: "Photo Saved", message: "Successfully Saved!", preferredStyle: UIAlertControllerStyle.Alert)
         let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default) { (action) -> Void in
             }
