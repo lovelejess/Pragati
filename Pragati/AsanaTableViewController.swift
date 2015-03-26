@@ -8,10 +8,13 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class AsanaTableViewController: UITableViewController {
     
     var asanas: [Asana] = asanaData
+    
+    var asanaPhotoCollection = [NSManagedObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,12 +57,23 @@ class AsanaTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? UserPhotoCollectionViewController {
                 
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
-                    var asanaSelected = asanas[asanaIndex].english
-                    destination.title = asanaSelected
-                    destination.userPhoto = asanaMap[asanaSelected]!
-                    //destination.defaultImage = asanas[asanaIndex].defaultImage!
-                    //destination.sanskrit = asanas[asanaIndex].sanskrit
-                    //destination.english = asanas[asanaIndex].english
+                    
+                    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+                    let managedContext = appDelegate.managedObjectContext!
+                    var asanaSelectedName = (asanas[asanaIndex].english).stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
+                    let fetchRequest = NSFetchRequest(entityName: asanaSelectedName)
+                    var fetchingError: NSError?
+                    let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+                    
+                    if let results = fetchResults {
+                        asanaPhotoCollection = results
+                        destination.title = asanaSelectedName
+                        
+                    }
+                    else {
+                        println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
+                    }
+                    
                     
                 }
             }

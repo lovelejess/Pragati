@@ -24,6 +24,7 @@
 		10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4431A81BBAB0071C934 /* AsanaCell.swift */; };
 		10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4621A81D0340071C934 /* downwardFacingDog.png */; };
 		10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4681A81D4B20071C934 /* FirstViewController.swift */; };
+		10C6C7781AC3798F009B274A /* Pragati.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */; };
 		10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */; };
 		10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */; };
 		10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */; };
@@ -63,6 +64,7 @@
 		10C5E4621A81D0340071C934 /* downwardFacingDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downwardFacingDog.png; sourceTree = "<group>"; };
 		10C5E4681A81D4B20071C934 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaImageViewController.swift; sourceTree = "<group>"; };
+		10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pragati.xcdatamodel; sourceTree = "<group>"; };
 		10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUserAsanaImageViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				10C5E4681A81D4B20071C934 /* FirstViewController.swift */,
 				10C5E4191A8072800071C934 /* AppDelegate.swift */,
+				10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
 				10C5E41F1A8072800071C934 /* Main.storyboard */,
 				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
@@ -277,6 +280,7 @@
 				10C5E4401A80794C0071C934 /* SampleData.swift in Sources */,
 				10C5E43E1A8078C80071C934 /* Asana.swift in Sources */,
 				10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */,
+				10C6C7781AC3798F009B274A /* Pragati.xcdatamodeld in Sources */,
 				10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */,
 				10C05E7D1ABF65B200BB7726 /* AsanaPhoto.swift in Sources */,
 				10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */,
@@ -488,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */,
+			);
+			currentVersion = 10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */;
+			path = Pragati.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10C5E40C1A8072800071C934 /* Project object */;
 }

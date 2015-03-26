@@ -8,10 +8,11 @@
 
 import UIKit
 import MobileCoreServices
+import CoreData
 
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
-    
-    var userPhoto: [AsanaPhoto] = defaultPhotos
+
+    var asanaPhotoCollection = [NSManagedObject]()
     
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
@@ -40,14 +41,28 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return userPhoto.count
+        return asanaPhotoCollection.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
 
         // Configure the cell
-        userPhotoCell.tempImage?.image = userPhoto[indexPath.row].photo
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let fetchRequest = NSFetchRequest(entityName: self.title!)
+        var fetchingError: NSError?
+        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+        
+        if let results = fetchResults {
+            asanaPhotoCollection = results
+            userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
+        }
+        else {
+            println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
+        }
+
         return userPhotoCell
         
     }
