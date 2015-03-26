@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -16,6 +17,8 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     @IBOutlet weak var savePhotoButton: UIBarButtonItem!
     
     let picker = UIImagePickerController()
+    
+    var asanaPhotoCollection = [NSManagedObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +33,35 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    func saveToPhotoCollection(photoToSave: UIImage?){
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        
+        let entity =  NSEntityDescription.entityForName("DownwardFacingDog",
+            inManagedObjectContext:
+            managedContext)
+        
+        let asanaPhoto = NSManagedObject(entity: entity!,
+            insertIntoManagedObjectContext:managedContext)
+        
+        asanaPhoto.setValue(1, forKey: "id")
+        asanaPhoto.setValue(photoToSave, forKey: "photo")
+        asanaPhoto.setValue(NSDate(),forKey: "date")
+        
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }  
+
+        asanaPhotoCollection.append(asanaPhoto)
+ 
+    }
+    
     @IBAction func savePhoto(){
         var photoToSave: UIImage?
         photoToSave = selectedPhoto.image!
         if (photoToSave != nil) {
+            saveToPhotoCollection(photoToSave)
             UIImageWriteToSavedPhotosAlbum(photoToSave, nil, nil, nil)
             displaySuccessfullSavePopUp()
         }
