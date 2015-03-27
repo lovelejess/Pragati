@@ -25,7 +25,12 @@ class AsanaTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.tableView.reloadData()
+        })
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,7 +71,7 @@ class AsanaTableViewController: UITableViewController {
                     let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
                     
                     if let results = fetchResults {
-                        asanaPhotoCollection = results
+                        destination.asanaPhotoCollection = results
                         destination.title = asanaSelectedName
                         
                     }

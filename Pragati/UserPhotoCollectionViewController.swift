@@ -12,7 +12,7 @@ import CoreData
 
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
-    var asanaPhotoCollection = [NSManagedObject]()
+    var asanaPhotoCollection: [NSManagedObject]!
     
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
@@ -28,6 +28,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         // Do any additional setup after loading the view.
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,6 +42,9 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if asanaPhotoCollection.isEmpty{
+            return 0
+        }
         return asanaPhotoCollection.count
     }
 
@@ -48,19 +52,20 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
 
         // Configure the cell
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        let managedContext = appDelegate.managedObjectContext!
-        let fetchRequest = NSFetchRequest(entityName: self.title!)
-        var fetchingError: NSError?
-        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
-        
-        if let results = fetchResults {
-            asanaPhotoCollection = results
-            userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
-        }
-        else {
-            println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
+        if !asanaPhotoCollection.isEmpty{
+            let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+            let managedContext = appDelegate.managedObjectContext!
+            let fetchRequest = NSFetchRequest(entityName: self.title!)
+            var fetchingError: NSError?
+            let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+            
+            if let results = fetchResults {
+                asanaPhotoCollection = results
+                userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
+            }
+            else {
+                println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
+            }
         }
 
         return userPhotoCell
@@ -75,7 +80,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "SelectedAsanaPhoto" {
+        if segue.identifier == "DisplayAsanaPhoto" {
             if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {
             
                 let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
@@ -84,6 +89,14 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
             }
         }
+        
+        if segue.identifier == "AddPhotoToSelectedAsana" {
+            if let destination = segue.destinationViewController as? AddUserPhotoViewController {
+                
+                destination.asanaPhotoCollection = asanaPhotoCollection
+            }
+        }
+
     }
 
     // MARK: UICollectionViewDelegate

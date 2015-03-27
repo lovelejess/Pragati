@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="DownwardFacingDog" syncable="YES">
+    <entity name="DownwardFacingDog" representedClassName="DownwardFacingDog" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
@@ -21,9 +21,9 @@
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DownwardFacingDog" positionX="-45" positionY="0" width="128" height="28"/>
-        <element name="UpwardBowPose" positionX="-18" positionY="27" width="128" height="88"/>
+        <element name="DownwardFacingDog" positionX="-45" positionY="0" width="128" height="90"/>
         <element name="TriangleLeft" positionX="9" positionY="54" width="128" height="88"/>
         <element name="TriangleRight" positionX="27" positionY="72" width="128" height="88"/>
+        <element name="UpwardBowPose" positionX="-18" positionY="27" width="128" height="88"/>
     </elements>
 </model>

@@ -172,7 +172,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="tempImage" destination="qU4-rh-F6c" id="GCB-xo-CQE"/>
-                                    <segue destination="L3u-Ru-YIM" kind="show" identifier="SelectedAsanaPhoto" id="hId-5T-DAc"/>
+                                    <segue destination="L3u-Ru-YIM" kind="show" identifier="DisplayAsanaPhoto" id="hId-5T-DAc"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -184,7 +184,7 @@
                     <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
                             <connections>
-                                <segue destination="Eta-VZ-ClR" kind="presentation" id="tXX-lo-svc"/>
+                                <segue destination="Eta-VZ-ClR" kind="presentation" identifier="AddPhotoToSelectedAsana" id="tXX-lo-svc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

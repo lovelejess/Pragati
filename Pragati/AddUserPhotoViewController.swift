@@ -18,7 +18,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     
     let picker = UIImagePickerController()
     
-    var asanaPhotoCollection = [NSManagedObject]()
+    var asanaPhotoCollection: [NSManagedObject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +85,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
 
     @IBAction func cancelButton(sender: UIStoryboardSegue){
         self.dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     @IBAction func cameraRoll(sender: AnyObject) {
