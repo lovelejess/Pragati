@@ -10,5 +10,5 @@ import UIKit
 
 class UserPhotoCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var tempImage: UIImageView!
+    @IBOutlet weak var userPhoto: UIImageView!
 }

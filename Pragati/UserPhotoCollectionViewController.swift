@@ -75,7 +75,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
         // Configure the cell
         if !asanaPhotoCollection.isEmpty{
-            userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?        }
+            userPhotoCell.userPhoto?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?        }
 
         return userPhotoCell
         
@@ -94,7 +94,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
             
                 let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
                 
-                destination.userPhoto = photoCell.tempImage.image!
+                destination.userPhoto = photoCell.userPhoto.image!
 
             }
         }

@@ -16,7 +16,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     @IBOutlet weak var selectedPhoto: UIImageView!
     @IBOutlet weak var savePhotoButton: UIBarButtonItem!
     
-    let picker = UIImagePickerController()
+    let photoAlbumPicker = UIImagePickerController()
     
     var asanaPhotoCollection: [NSManagedObject]!
     var asanaName: String?
@@ -24,7 +24,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        picker.delegate = self
+        photoAlbumPicker.delegate = self
         savePhotoButton.enabled = false
         // Do any additional setup after loading the view.
     }
@@ -90,19 +90,19 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     }
     
     @IBAction func cameraRoll(sender: AnyObject) {
-        picker.sourceType = .PhotoLibrary
-        picker.modalPresentationStyle = .Popover
-        picker.allowsEditing = false
-        presentViewController(picker, animated: true, completion: nil)
+        photoAlbumPicker.sourceType = .PhotoLibrary
+        photoAlbumPicker.modalPresentationStyle = .Popover
+        photoAlbumPicker.allowsEditing = false
+        presentViewController(photoAlbumPicker, animated: true, completion: nil)
     }
     
     @IBAction func capturePhoto(sender: UIBarButtonItem) {
         if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
-            picker.sourceType = UIImagePickerControllerSourceType.Camera
-            picker.cameraCaptureMode = .Photo
-            picker.allowsEditing = false
+            photoAlbumPicker.sourceType = UIImagePickerControllerSourceType.Camera
+            photoAlbumPicker.cameraCaptureMode = .Photo
+            photoAlbumPicker.allowsEditing = false
             
-            presentViewController(picker, animated: true, completion: nil)
+            presentViewController(photoAlbumPicker, animated: true, completion: nil)
         } else {
            cameraNotFound()
         }
