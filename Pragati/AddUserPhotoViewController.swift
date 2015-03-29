@@ -19,6 +19,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     let picker = UIImagePickerController()
     
     var asanaPhotoCollection: [NSManagedObject]!
+    var asanaName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         
-        let entity =  NSEntityDescription.entityForName("DownwardFacingDog",
+        let entity =  NSEntityDescription.entityForName(asanaName!,
             inManagedObjectContext:
             managedContext)
         

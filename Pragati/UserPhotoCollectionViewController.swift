@@ -103,6 +103,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
             if let destination = segue.destinationViewController as? AddUserPhotoViewController {
                 
                 destination.asanaPhotoCollection = asanaPhotoCollection
+                destination.asanaName = self.title?.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
             }
         }
 
