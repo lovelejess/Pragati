@@ -19,6 +19,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,7 +28,28 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        reloadData()
+        self.collectionView?.reloadData()
+        
+    }
+    
+    func reloadData(){
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let fetchRequest = NSFetchRequest(entityName: self.title!)
+        var fetchingError: NSError?
+        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+        
+        if let results = fetchResults {
+            asanaPhotoCollection = results
+        }
+        else {
+            println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -53,20 +75,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
         // Configure the cell
         if !asanaPhotoCollection.isEmpty{
-            let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-            let managedContext = appDelegate.managedObjectContext!
-            let fetchRequest = NSFetchRequest(entityName: self.title!)
-            var fetchingError: NSError?
-            let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
-            
-            if let results = fetchResults {
-                asanaPhotoCollection = results
-                userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
-            }
-            else {
-                println("Could not fetch \(fetchingError), \(fetchingError!.userInfo)")
-            }
-        }
+            userPhotoCell.tempImage?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?        }
 
         return userPhotoCell
         
