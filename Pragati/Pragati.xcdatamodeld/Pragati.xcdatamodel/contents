@@ -5,17 +5,17 @@
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
-    <entity name="TriangleLeft" syncable="YES">
+    <entity name="TriangleLeft" representedClassName="TriangleLeft" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
-    <entity name="TriangleRight" syncable="YES">
+    <entity name="TriangleRight" representedClassName="TriangleRight" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
-    <entity name="UpwardBowPose" syncable="YES">
+    <entity name="UpwardBowPose" representedClassName="UpwardBowPose" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Transformable" syncable="YES"/>

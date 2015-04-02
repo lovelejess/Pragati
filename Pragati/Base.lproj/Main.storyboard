@@ -196,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="2136" y="-306"/>
         </scene>
-        <!--Display User Asana Image View Controller-->
+        <!--Title-->
         <scene sceneID="FzH-xb-XbM">
             <objects>
                 <viewController id="L3u-Ru-YIM" customClass="DisplayUserAsanaImageViewController" customModule="Pragati" customModuleProvider="target" sceneMemberID="viewController">
@@ -220,6 +220,13 @@
                             <constraint firstItem="txN-kn-nqK" firstAttribute="top" secondItem="sy9-l2-P9g" secondAttribute="bottom" id="XBX-iE-IEX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="bre-D0-Uqv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="hD6-Ae-C1H">
+                            <connections>
+                                <action selector="displayActionSheet" destination="L3u-Ru-YIM" id="6b3-K5-VST"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="selectedUserPhoto" destination="txN-kn-nqK" id="MHn-Hf-V59"/>
                     </connections>

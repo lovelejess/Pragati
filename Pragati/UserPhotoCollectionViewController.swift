@@ -13,6 +13,7 @@ import CoreData
 class UserPhotoCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
     var asanaPhotoCollection: [NSManagedObject]!
+    var asanaName = String()
     
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
@@ -39,7 +40,8 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     func reloadData(){
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
-        let fetchRequest = NSFetchRequest(entityName: self.title!)
+        asanaName = self.title!.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
+        let fetchRequest = NSFetchRequest(entityName: asanaName)
         var fetchingError: NSError?
         let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
         
@@ -95,7 +97,9 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
                 let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
                 
                 destination.userPhoto = photoCell.userPhoto.image!
-
+                destination.asanaPhotoCollection = asanaPhotoCollection
+                destination.title = asanaName
+                destination.asanaName = asanaName
             }
         }
         
@@ -103,7 +107,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
             if let destination = segue.destinationViewController as? AddUserPhotoViewController {
                 
                 destination.asanaPhotoCollection = asanaPhotoCollection
-                destination.asanaName = self.title?.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
+                destination.asanaName = asanaName
             }
         }
 

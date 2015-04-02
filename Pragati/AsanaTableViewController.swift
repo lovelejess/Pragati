@@ -15,6 +15,7 @@ class AsanaTableViewController: UITableViewController {
     var asanas: [Asana] = asanaData
     
     var asanaPhotoCollection = [NSManagedObject]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +66,9 @@ class AsanaTableViewController: UITableViewController {
                     
                     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
                     let managedContext = appDelegate.managedObjectContext!
-                    var asanaSelectedName = (asanas[asanaIndex].english).stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
-                    let fetchRequest = NSFetchRequest(entityName: asanaSelectedName)
+                    var asanaSelectedName = (asanas[asanaIndex].english)
+                    let asanaEntity = asanaSelectedName.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
+                    let fetchRequest = NSFetchRequest(entityName: asanaEntity)
                     var fetchingError: NSError?
                     let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
                     

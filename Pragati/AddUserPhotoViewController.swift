@@ -57,7 +57,7 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
         asanaPhotoCollection.append(asanaPhoto)
  
     }
-    
+        
     @IBAction func savePhoto(){
         var photoToSave: UIImage?
         photoToSave = selectedPhoto.image!

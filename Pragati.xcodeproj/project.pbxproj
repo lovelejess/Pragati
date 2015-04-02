@@ -29,6 +29,9 @@
 		10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */; };
 		10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */; };
 		10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */; };
+		10D1B0C41ACCE5ED008217DA /* UpwardBowPose.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */; };
+		10D1B0C71ACCE5EE008217DA /* TriangleLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */; };
+		10D1B0CA1ACCE5EE008217DA /* TriangleRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C91ACCE5EE008217DA /* TriangleRight.m */; };
 		10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,12 @@
 		10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUserAsanaImageViewController.swift; sourceTree = "<group>"; };
+		10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpwardBowPose.h; sourceTree = "<group>"; };
+		10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpwardBowPose.m; sourceTree = "<group>"; };
+		10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleLeft.h; sourceTree = "<group>"; };
+		10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleLeft.m; sourceTree = "<group>"; };
+		10D1B0C81ACCE5EE008217DA /* TriangleRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleRight.h; sourceTree = "<group>"; };
+		10D1B0C91ACCE5EE008217DA /* TriangleRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRight.m; sourceTree = "<group>"; };
 		10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triangle.jpeg; path = ../triangle.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,14 +123,20 @@
 		10C5E4161A8072800071C934 /* Pragati */ = {
 			isa = PBXGroup;
 			children = (
+				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
 				10C5E4681A81D4B20071C934 /* FirstViewController.swift */,
 				10C5E4191A8072800071C934 /* AppDelegate.swift */,
 				10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */,
+				10D1B0C81ACCE5EE008217DA /* TriangleRight.h */,
+				10D1B0C91ACCE5EE008217DA /* TriangleRight.m */,
+				10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */,
+				10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */,
+				10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */,
+				10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */,
 				10C494B01AC4F71800E27737 /* DownwardFacingDog.h */,
 				10C494B11AC4F71800E27737 /* DownwardFacingDog.m */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
 				10C5E41F1A8072800071C934 /* Main.storyboard */,
-				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
 				10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */,
 				10C5E4611A81D0340071C934 /* Resources */,
 				10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */,
@@ -283,15 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D1B0CA1ACCE5EE008217DA /* TriangleRight.m in Sources */,
 				10C5E43C1A8078890071C934 /* AsanaTableViewController.swift in Sources */,
 				10C5E4401A80794C0071C934 /* SampleData.swift in Sources */,
 				10C5E43E1A8078C80071C934 /* Asana.swift in Sources */,
+				10D1B0C41ACCE5ED008217DA /* UpwardBowPose.m in Sources */,
 				10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */,
 				10C6C7781AC3798F009B274A /* Pragati.xcdatamodeld in Sources */,
 				10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */,
 				10C494B21AC4F71800E27737 /* DownwardFacingDog.m in Sources */,
 				10C05E7D1ABF65B200BB7726 /* AsanaPhoto.swift in Sources */,
 				10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */,
+				10D1B0C71ACCE5EE008217DA /* TriangleLeft.m in Sources */,
 				10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */,
 				10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */,
 				10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */,
