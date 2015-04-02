@@ -62,6 +62,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
         
         println("deleting object")
         managedContext.deleteObject(fetchResults[0] as NSManagedObject)
+        managedContext.save(nil)
     }
 
     /*

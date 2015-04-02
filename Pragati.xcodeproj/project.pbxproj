@@ -123,18 +123,10 @@
 		10C5E4161A8072800071C934 /* Pragati */ = {
 			isa = PBXGroup;
 			children = (
+				10D1B0CB1ACCE67F008217DA /* CoreData */,
 				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
 				10C5E4681A81D4B20071C934 /* FirstViewController.swift */,
 				10C5E4191A8072800071C934 /* AppDelegate.swift */,
-				10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */,
-				10D1B0C81ACCE5EE008217DA /* TriangleRight.h */,
-				10D1B0C91ACCE5EE008217DA /* TriangleRight.m */,
-				10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */,
-				10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */,
-				10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */,
-				10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */,
-				10C494B01AC4F71800E27737 /* DownwardFacingDog.h */,
-				10C494B11AC4F71800E27737 /* DownwardFacingDog.m */,
 				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
 				10C5E41F1A8072800071C934 /* Main.storyboard */,
 				10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */,
@@ -150,7 +142,6 @@
 				10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */,
 				10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */,
 				10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */,
-				10C494AF1AC4F71700E27737 /* Pragati-Bridging-Header.h */,
 			);
 			path = Pragati;
 			sourceTree = "<group>";
@@ -190,6 +181,23 @@
 				10C5E4621A81D0340071C934 /* downwardFacingDog.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		10D1B0CB1ACCE67F008217DA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				10C494AF1AC4F71700E27737 /* Pragati-Bridging-Header.h */,
+				10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */,
+				10D1B0C81ACCE5EE008217DA /* TriangleRight.h */,
+				10D1B0C91ACCE5EE008217DA /* TriangleRight.m */,
+				10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */,
+				10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */,
+				10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */,
+				10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */,
+				10C494B01AC4F71800E27737 /* DownwardFacingDog.h */,
+				10C494B11AC4F71800E27737 /* DownwardFacingDog.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
