@@ -32,6 +32,8 @@
 		10D1B0C41ACCE5ED008217DA /* UpwardBowPose.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */; };
 		10D1B0C71ACCE5EE008217DA /* TriangleLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */; };
 		10D1B0CA1ACCE5EE008217DA /* TriangleRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C91ACCE5EE008217DA /* TriangleRight.m */; };
+		10D1B0CF1ACE32ED008217DA /* AsanaTableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0CC1ACE29D9008217DA /* AsanaTableViewControllerTest.swift */; };
+		10D1B0D01ACE3315008217DA /* AsanaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */; };
 		10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,7 @@
 		10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleLeft.m; sourceTree = "<group>"; };
 		10D1B0C81ACCE5EE008217DA /* TriangleRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleRight.h; sourceTree = "<group>"; };
 		10D1B0C91ACCE5EE008217DA /* TriangleRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRight.m; sourceTree = "<group>"; };
+		10D1B0CC1ACE29D9008217DA /* AsanaTableViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaTableViewControllerTest.swift; sourceTree = "<group>"; };
 		10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triangle.jpeg; path = ../triangle.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +162,7 @@
 			children = (
 				10C5E4311A8072810071C934 /* PragatiTests.swift */,
 				10C5E42F1A8072810071C934 /* Supporting Files */,
+				10D1B0CC1ACE29D9008217DA /* AsanaTableViewControllerTest.swift */,
 			);
 			path = PragatiTests;
 			sourceTree = "<group>";
@@ -330,6 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D1B0D01ACE3315008217DA /* AsanaTableViewController.swift in Sources */,
+				10D1B0CF1ACE32ED008217DA /* AsanaTableViewControllerTest.swift in Sources */,
 				10C5E4321A8072810071C934 /* PragatiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
