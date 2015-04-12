@@ -26,12 +26,10 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
 
         photoAlbumPicker.delegate = self
         savePhotoButton.enabled = false
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func saveToPhotoCollection(photoToSave: UIImage?){

@@ -53,11 +53,12 @@ class AsanaTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? UserPhotoCollectionViewController {
                 
                 if let asanaIndex = tableView.indexPathForSelectedRow()?.row {
+                    var asanaSelectedName = (asanas[asanaIndex].english)
+                    let asanaEntity = parseAsanaName(asanaSelectedName)
                     
                     let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
                     let managedContext = appDelegate.managedObjectContext!
-                    var asanaSelectedName = (asanas[asanaIndex].english)
-                    let asanaEntity = asanaSelectedName.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
+                    
                     let fetchRequest = NSFetchRequest(entityName: asanaEntity)
                     var fetchingError: NSError?
                     let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
@@ -65,6 +66,7 @@ class AsanaTableViewController: UITableViewController {
                     if let results = fetchResults {
                         destination.asanaPhotoCollection = results
                         destination.title = asanaSelectedName
+                        destination.asanaName = parseAsanaName(asanaSelectedName)
                         
                     }
                     else {

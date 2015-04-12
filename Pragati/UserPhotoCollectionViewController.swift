@@ -32,8 +32,6 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     }
     
     func reloadData(){
-        asanaName = self.title!.stringByReplacingOccurrencesOfString(" ", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString(")", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil).stringByReplacingOccurrencesOfString("(", withString: "", options:NSStringCompareOptions.LiteralSearch, range: nil)
-
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         let fetchRequest = NSFetchRequest(entityName: asanaName)
@@ -109,7 +107,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
                 
                 destination.userPhoto = photoCell.userPhoto.image!
                 destination.asanaPhotoCollection = asanaPhotoCollection
-                destination.title = asanaName
+                destination.title = self.title
                 destination.asanaName = asanaName
             }
         }
@@ -118,6 +116,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
             if let destination = segue.destinationViewController as? AddUserPhotoViewController {
                 
                 destination.asanaPhotoCollection = asanaPhotoCollection
+                destination.title = self.title
                 destination.asanaName = asanaName
             }
         }
