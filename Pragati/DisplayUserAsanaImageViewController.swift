@@ -16,6 +16,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
     var userPhoto = UIImage()
     var asanaName: String?
     var asanaPhotoCollection: [NSManagedObject]!
+    var date = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,22 @@ class DisplayUserAsanaImageViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        selectedUserPhoto.layer.borderWidth = 15
+        selectedUserPhoto.layer.borderColor = (UIColor.whiteColor()).CGColor
         selectedUserPhoto.image = userPhoto
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let fetchRequest = NSFetchRequest(entityName: asanaName!)
+        fetchRequest.includesSubentities = false
+        fetchRequest.returnsObjectsAsFaults = false
+        fetchRequest.predicate = NSPredicate(format:"photo == %@", userPhoto)
+        var fetchingError: NSError?
+        
+        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]!
+        
+        println(fetchResults.count)
+        println(fetchResults[0].valueForKey("date") as String!)
 
     }
     

@@ -15,6 +15,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     var asanaPhotoCollection: [NSManagedObject]!
     var asanaName = String()
     
+    let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0);
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
     
@@ -70,6 +71,18 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
         return userPhotoCell
         
+    }
+    
+    func collectionView(collectionView: UICollectionView!,
+        layout collectionViewLayout: UICollectionViewLayout!,
+        sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
+            return CGSize(width: 90 , height: 110)
+    }
+    
+    func collectionView(collectionView: UICollectionView!,
+        layout collectionViewLayout: UICollectionViewLayout!,
+        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+            return sectionInsets
     }
     
     @IBAction func cameraRoll(sender: AnyObject) {

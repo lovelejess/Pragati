@@ -10,5 +10,6 @@ import UIKit
 
 class UserPhotoCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var date: UILabel!
     @IBOutlet weak var userPhoto: UIImageView!
 }
