@@ -71,6 +71,20 @@ class DisplayUserAsanaImageViewController: UIViewController {
         
     }
     
+    func displaySuccessfullDeletePopUp(){
+        let successfullAlert = UIAlertController(title: "Photo Deleted", message: "Successfully Deleted!", preferredStyle: UIAlertControllerStyle.Alert)
+        let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default) { (action) -> Void in
+            if let navigationController = self.navigationController
+            {
+                navigationController.popViewControllerAnimated(true)
+            }
+        }
+        successfullAlert.addAction(acknowledgedButton)
+        self.presentViewController(successfullAlert, animated: true, completion: nil)
+        
+        
+    }
+    
     func deletePhotoFromCollection(){
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
@@ -81,6 +95,9 @@ class DisplayUserAsanaImageViewController: UIViewController {
             println("deleting object")
             managedContext.deleteObject(fetchResults[0] as NSManagedObject)
             managedContext.save(nil)
+            displaySuccessfullDeletePopUp()
+            
+            
         }
         else {
             println("ERROR: Unable to delete object")

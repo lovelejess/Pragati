@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class AddUserPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var capturePhotoButton: UIBarButtonItem!
@@ -69,6 +69,8 @@ class AddUserPhotoViewController: UIViewController ,UIImagePickerControllerDeleg
     func displaySuccessfullSavePopUp(){
         let successfullAlert = UIAlertController(title: "Photo Saved", message: "Successfully Saved!", preferredStyle: UIAlertControllerStyle.Alert)
         let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default) { (action) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+
             }
         successfullAlert.addAction(acknowledgedButton)
         self.presentViewController(successfullAlert, animated: true, completion: nil)
