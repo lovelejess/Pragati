@@ -14,10 +14,11 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
 
     var asanaPhotoCollection: [NSManagedObject]!
     var asanaName = String()
-    
-    let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0);
     @IBOutlet weak var addUserPhotoButton: UIBarButtonItem!
     let picker = UIImagePickerController()
+    
+    let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0);
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,15 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
 
         if !asanaPhotoCollection.isEmpty{
-            userPhotoCell.userPhoto?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?        }
+            userPhotoCell.userPhoto?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
+            
+            if let date = asanaPhotoCollection[indexPath.row].valueForKey("date") as? NSDate {
+                var dateFormatter = NSDateFormatter()
+                dateFormatter.dateFormat = "MM-dd-yy"
+                var dateString = dateFormatter.stringFromDate(date)
+                userPhotoCell.date.text = dateString
+                }
+        }
 
         return userPhotoCell
         

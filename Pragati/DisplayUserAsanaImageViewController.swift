@@ -16,7 +16,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
     var userPhoto = UIImage()
     var asanaName: String?
     var asanaPhotoCollection: [NSManagedObject]!
-    var date = UILabel()
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,14 @@ class DisplayUserAsanaImageViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func fetchRequest(keyFormat: String) -> NSFetchRequest {
+        let fetchRequest = NSFetchRequest(entityName: asanaName!)
+        fetchRequest.includesSubentities = false
+        fetchRequest.returnsObjectsAsFaults = false
+        fetchRequest.predicate = NSPredicate(format:keyFormat, userPhoto)
+        return fetchRequest
+    }
+    
     override func viewWillAppear(animated: Bool) {
         selectedUserPhoto.layer.borderWidth = 15
         selectedUserPhoto.layer.borderColor = (UIColor.whiteColor()).CGColor
@@ -34,16 +42,16 @@ class DisplayUserAsanaImageViewController: UIViewController {
         
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
-        let fetchRequest = NSFetchRequest(entityName: asanaName!)
-        fetchRequest.includesSubentities = false
-        fetchRequest.returnsObjectsAsFaults = false
-        fetchRequest.predicate = NSPredicate(format:"photo == %@", userPhoto)
         var fetchingError: NSError?
         
-        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]!
-        
-        println(fetchResults.count)
-        println(fetchResults[0].valueForKey("date") as String!)
+        if let fetchResults = managedContext.executeFetchRequest(fetchRequest("photo == %@"), error: &fetchingError) as? [NSManagedObject]{
+            if let date = (fetchResults[0].valueForKey("date")) as? NSDate {
+                var dateFormatter = NSDateFormatter()
+                dateFormatter.dateFormat = "MM-dd-yyyy"
+                var dateString = dateFormatter.stringFromDate(date)
+                dateLabel.text = dateString
+            }
+        }
 
     }
     
@@ -66,16 +74,17 @@ class DisplayUserAsanaImageViewController: UIViewController {
     func deletePhotoFromCollection(){
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
-        let fetchRequest = NSFetchRequest(entityName: asanaName!)
-        fetchRequest.includesSubentities = false
-        fetchRequest.returnsObjectsAsFaults = false
-        fetchRequest.predicate = NSPredicate(format:"photo == %@", userPhoto)
         var fetchingError: NSError?
         
-        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]!
-        
-        println("deleting object")
-        managedContext.deleteObject(fetchResults[0] as NSManagedObject)
-        managedContext.save(nil)
+        if let fetchResults = managedContext.executeFetchRequest(fetchRequest("photo == %@"), error: &fetchingError) as? [NSManagedObject]{
+            
+            println("deleting object")
+            managedContext.deleteObject(fetchResults[0] as NSManagedObject)
+            managedContext.save(nil)
+        }
+        else {
+            println("ERROR: Unable to delete object")
+        }
+
     }
 }
