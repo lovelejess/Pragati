@@ -33,7 +33,7 @@ class AddUserPhotoViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     func saveToPhotoCollection(photoToSave: UIImage?){
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         
         let entity =  NSEntityDescription.entityForName(asanaName!,

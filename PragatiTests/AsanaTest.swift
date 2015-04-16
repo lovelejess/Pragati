@@ -18,7 +18,7 @@ class AsanaTest: XCTestCase {
         
         XCTAssertEqual(sanskrit, asana.sanskrit, "Sanskrit is not set properly")
         XCTAssertEqual(english, asana.english, "English is not set properly")
-        XCTAssertNotNil(asana.defaultImage?, "Default Image is not set properly")
+        XCTAssertNotNil(asana.defaultImage, "Default Image is not set properly")
     }
 }
 

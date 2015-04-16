@@ -32,11 +32,11 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     }
     
     func reloadData(){
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         let fetchRequest = NSFetchRequest(entityName: asanaName)
         var fetchingError: NSError?
-        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+        let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as! [NSManagedObject]?
         
         if let results = fetchResults {
             asanaPhotoCollection = results
@@ -63,10 +63,10 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as UserPhotoCollectionViewCell
+        let userPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("UserPhotoCell", forIndexPath: indexPath) as! UserPhotoCollectionViewCell
 
         if !asanaPhotoCollection.isEmpty{
-            userPhotoCell.userPhoto?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as UIImage?
+            userPhotoCell.userPhoto?.image = asanaPhotoCollection[indexPath.row].valueForKey("photo") as! UIImage?
             
             if let date = asanaPhotoCollection[indexPath.row].valueForKey("date") as? NSDate {
                 var dateFormatter = NSDateFormatter()
@@ -80,14 +80,14 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         
     }
     
-    func collectionView(collectionView: UICollectionView!,
-        layout collectionViewLayout: UICollectionViewLayout!,
-        sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
+    func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
             return CGSize(width: 90 , height: 110)
     }
     
-    func collectionView(collectionView: UICollectionView!,
-        layout collectionViewLayout: UICollectionViewLayout!,
+    func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
         insetForSectionAtIndex section: Int) -> UIEdgeInsets {
             return sectionInsets
     }
@@ -103,7 +103,7 @@ class UserPhotoCollectionViewController: UICollectionViewController,UICollection
         if segue.identifier == "DisplayAsanaPhoto" {
             if let destination = segue.destinationViewController as? DisplayUserAsanaImageViewController {
             
-                let photoCell : UserPhotoCollectionViewCell = sender as UserPhotoCollectionViewCell
+                let photoCell : UserPhotoCollectionViewCell = sender as! UserPhotoCollectionViewCell
                 
                 destination.userPhoto = photoCell.userPhoto.image!
                 destination.asanaPhotoCollection = asanaPhotoCollection

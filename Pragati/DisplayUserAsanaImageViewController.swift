@@ -40,7 +40,7 @@ class DisplayUserAsanaImageViewController: UIViewController {
         selectedUserPhoto.layer.borderColor = (UIColor.whiteColor()).CGColor
         selectedUserPhoto.image = userPhoto
         
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         var fetchingError: NSError?
         
@@ -58,7 +58,9 @@ class DisplayUserAsanaImageViewController: UIViewController {
     @IBAction func displayActionSheet(){
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         
-        let deletePhoto = UIAlertAction(title: "Delete", style: .Default) {(action) in         self.deletePhotoFromCollection()
+        let deletePhoto = UIAlertAction(title: "Delete", style: .Default)
+        {
+            (action) in self.displayDeleteConfirmationPopUp()
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
@@ -68,25 +70,46 @@ class DisplayUserAsanaImageViewController: UIViewController {
         optionMenu.addAction(cancelAction)
         
         self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    func displayDeleteConfirmationPopUp(){
+        let successfullAlert = UIAlertController(title: "Verify Photo Deletion", message: "Are you sure you want to delete this photo?", preferredStyle: UIAlertControllerStyle.Alert)
+        let yesDeleteButton = UIAlertAction(title: "Yes", style: .Default)
+            {
+                (action) -> Void in
+                if let navigationController = self.navigationController
+                {
+                    self.deletePhotoFromCollection()
+                    self.displaySuccessfullDeletePopUp()
+                    navigationController.popViewControllerAnimated(true)
+                }
+        }
         
+        let cancelDeleteButton = UIAlertAction(title: "No", style: .Cancel)
+            {
+                (action) -> Void in
+        }
+        successfullAlert.addAction(yesDeleteButton)
+        successfullAlert.addAction(cancelDeleteButton)
+        self.presentViewController(successfullAlert, animated: true, completion: nil)
     }
     
     func displaySuccessfullDeletePopUp(){
         let successfullAlert = UIAlertController(title: "Photo Deleted", message: "Successfully Deleted!", preferredStyle: UIAlertControllerStyle.Alert)
-        let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default) { (action) -> Void in
-            if let navigationController = self.navigationController
+        let acknowledgedButton = UIAlertAction(title: "Namaste", style: .Default)
             {
-                navigationController.popViewControllerAnimated(true)
+                (action) -> Void in
+                if let navigationController = self.navigationController
+                {
+                    navigationController.popViewControllerAnimated(true)
+                }
             }
-        }
         successfullAlert.addAction(acknowledgedButton)
         self.presentViewController(successfullAlert, animated: true, completion: nil)
-        
-        
     }
     
     func deletePhotoFromCollection(){
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         var fetchingError: NSError?
         

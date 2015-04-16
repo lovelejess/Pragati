@@ -39,7 +39,7 @@ class AsanaTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let asanaCell = tableView.dequeueReusableCellWithIdentifier("AsanaCell", forIndexPath: indexPath) as UITableViewCell
+        let asanaCell = tableView.dequeueReusableCellWithIdentifier("AsanaCell", forIndexPath: indexPath) as! UITableViewCell
 
         let asana = asanas[indexPath.row] as Asana
         asanaCell.textLabel?.text = asana.sanskrit
@@ -56,12 +56,12 @@ class AsanaTableViewController: UITableViewController {
                     var asanaSelectedName = (asanas[asanaIndex].english)
                     let asanaEntity = parseAsanaName(asanaSelectedName)
                     
-                    let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                     let managedContext = appDelegate.managedObjectContext!
                     
                     let fetchRequest = NSFetchRequest(entityName: asanaEntity)
                     var fetchingError: NSError?
-                    let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as [NSManagedObject]?
+                    let fetchResults = managedContext.executeFetchRequest(fetchRequest, error: &fetchingError) as! [NSManagedObject]?
                     
                     if let results = fetchResults {
                         destination.asanaPhotoCollection = results
