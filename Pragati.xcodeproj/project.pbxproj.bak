@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */; };
+		1014755F1AAB45C700EB3239 /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1014755E1AAB45C600EB3239 /* wheel.png */; };
+		101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */; };
+		10495F221ADAF27000C0E618 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10495F211ADAF27000C0E618 /* Utilities.swift */; };
+		10C05E7D1ABF65B200BB7726 /* AsanaPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C05E7C1ABF65B200BB7726 /* AsanaPhoto.swift */; };
+		10C05E7F1ABF775600BB7726 /* hdstd-funkyLegs.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */; };
+		10C494B21AC4F71800E27737 /* DownwardFacingDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C494B11AC4F71800E27737 /* DownwardFacingDog.m */; };
+		10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4191A8072800071C934 /* AppDelegate.swift */; };
+		10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E41D1A8072800071C934 /* SecondViewController.swift */; };
+		10C5E4211A8072800071C934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E41F1A8072800071C934 /* Main.storyboard */; };
+		10C5E4231A8072800071C934 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4221A8072800071C934 /* Images.xcassets */; };
+		10C5E4261A8072800071C934 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4241A8072800071C934 /* LaunchScreen.xib */; };
+		10C5E4321A8072810071C934 /* PragatiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4311A8072810071C934 /* PragatiTests.swift */; };
+		10C5E43E1A8078C80071C934 /* Asana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43D1A8078C80071C934 /* Asana.swift */; };
+		10C5E4401A80794C0071C934 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43F1A80794C0071C934 /* SampleData.swift */; };
+		10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4431A81BBAB0071C934 /* AsanaCell.swift */; };
+		10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C5E4621A81D0340071C934 /* downwardFacingDog.png */; };
+		10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E4681A81D4B20071C934 /* FirstViewController.swift */; };
+		10C6C7781AC3798F009B274A /* Pragati.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */; };
+		10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */; };
+		10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */; };
+		10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */; };
+		10D1B0C41ACCE5ED008217DA /* UpwardBowPose.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */; };
+		10D1B0C71ACCE5EE008217DA /* TriangleLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */; };
+		10D1B0CA1ACCE5EE008217DA /* TriangleRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0C91ACCE5EE008217DA /* TriangleRight.m */; };
+		10D1B0D31AD5F093008217DA /* AsanaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */; };
+		10D1B0D91AD5F0F0008217DA /* AsanaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D1B0CC1ACE29D9008217DA /* AsanaTest.swift */; };
+		10D1B0DD1AD5FFD3008217DA /* Asana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C5E43D1A8078C80071C934 /* Asana.swift */; };
+		10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10C5E42C1A8072810071C934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10C5E40C1A8072800071C934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C5E4131A8072800071C934;
+			remoteInfo = Pragati;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hdstd-rockies.JPG"; sourceTree = "<group>"; };
+		1014755E1AAB45C600EB3239 /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
+		101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserPhotoViewController.swift; sourceTree = "<group>"; };
+		10495F211ADAF27000C0E618 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Common/Utilities.swift; sourceTree = "<group>"; };
+		10C05E7C1ABF65B200BB7726 /* AsanaPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaPhoto.swift; sourceTree = "<group>"; };
+		10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hdstd-funkyLegs.JPG"; sourceTree = "<group>"; };
+		10C494AF1AC4F71700E27737 /* Pragati-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pragati-Bridging-Header.h"; sourceTree = "<group>"; };
+		10C494B01AC4F71800E27737 /* DownwardFacingDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownwardFacingDog.h; sourceTree = "<group>"; };
+		10C494B11AC4F71800E27737 /* DownwardFacingDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownwardFacingDog.m; sourceTree = "<group>"; };
+		10C5E4141A8072800071C934 /* Pragati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pragati.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C5E4181A8072800071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C5E4191A8072800071C934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10C5E41D1A8072800071C934 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		10C5E4201A8072800071C934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10C5E4221A8072800071C934 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10C5E4251A8072800071C934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10C5E42B1A8072810071C934 /* PragatiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PragatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C5E4301A8072810071C934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C5E4311A8072810071C934 /* PragatiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragatiTests.swift; sourceTree = "<group>"; };
+		10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaTableViewController.swift; sourceTree = "<group>"; };
+		10C5E43D1A8078C80071C934 /* Asana.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asana.swift; sourceTree = "<group>"; };
+		10C5E43F1A80794C0071C934 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		10C5E4431A81BBAB0071C934 /* AsanaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaCell.swift; sourceTree = "<group>"; };
+		10C5E4621A81D0340071C934 /* downwardFacingDog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downwardFacingDog.png; sourceTree = "<group>"; };
+		10C5E4681A81D4B20071C934 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaImageViewController.swift; sourceTree = "<group>"; };
+		10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pragati.xcdatamodel; sourceTree = "<group>"; };
+		10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayUserAsanaImageViewController.swift; sourceTree = "<group>"; };
+		10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpwardBowPose.h; sourceTree = "<group>"; };
+		10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpwardBowPose.m; sourceTree = "<group>"; };
+		10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleLeft.h; sourceTree = "<group>"; };
+		10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleLeft.m; sourceTree = "<group>"; };
+		10D1B0C81ACCE5EE008217DA /* TriangleRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleRight.h; sourceTree = "<group>"; };
+		10D1B0C91ACCE5EE008217DA /* TriangleRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRight.m; sourceTree = "<group>"; };
+		10D1B0CC1ACE29D9008217DA /* AsanaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaTest.swift; sourceTree = "<group>"; };
+		10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triangle.jpeg; path = ../triangle.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10C5E4111A8072800071C934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C5E4281A8072810071C934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1076FE111AE097260080A7BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10C5E40B1A8072800071C934 = {
+			isa = PBXGroup;
+			children = (
+				1076FE111AE097260080A7BA /* Frameworks */,
+				10C5E4161A8072800071C934 /* Pragati */,
+				10C5E42E1A8072810071C934 /* PragatiTests */,
+				10C5E4151A8072800071C934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10C5E4151A8072800071C934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10C5E4141A8072800071C934 /* Pragati.app */,
+				10C5E42B1A8072810071C934 /* PragatiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10C5E4161A8072800071C934 /* Pragati */ = {
+			isa = PBXGroup;
+			children = (
+				10D1B0CB1ACCE67F008217DA /* CoreData */,
+				101475641AAD1F5300EB3239 /* AddUserPhotoViewController.swift */,
+				10C5E4681A81D4B20071C934 /* FirstViewController.swift */,
+				10C5E4191A8072800071C934 /* AppDelegate.swift */,
+				10C5E41D1A8072800071C934 /* SecondViewController.swift */,
+				10C5E41F1A8072800071C934 /* Main.storyboard */,
+				10C7129F1AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift */,
+				10495F211ADAF27000C0E618 /* Utilities.swift */,
+				10C5E4611A81D0340071C934 /* Resources */,
+				10C5E43B1A8078890071C934 /* AsanaTableViewController.swift */,
+				10C5E43D1A8078C80071C934 /* Asana.swift */,
+				10C5E4431A81BBAB0071C934 /* AsanaCell.swift */,
+				10C5E43F1A80794C0071C934 /* SampleData.swift */,
+				10C05E7C1ABF65B200BB7726 /* AsanaPhoto.swift */,
+				10C5E4221A8072800071C934 /* Images.xcassets */,
+				10C5E4241A8072800071C934 /* LaunchScreen.xib */,
+				10C5E4171A8072800071C934 /* Supporting Files */,
+				10C5E46A1A8DA5CF0071C934 /* AsanaImageViewController.swift */,
+				10C712A31AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift */,
+				10C712A11AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift */,
+			);
+			path = Pragati;
+			sourceTree = "<group>";
+		};
+		10C5E4171A8072800071C934 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10C5E4181A8072800071C934 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10C5E42E1A8072810071C934 /* PragatiTests */ = {
+			isa = PBXGroup;
+			children = (
+				10C5E4311A8072810071C934 /* PragatiTests.swift */,
+				10C5E42F1A8072810071C934 /* Supporting Files */,
+				10D1B0CC1ACE29D9008217DA /* AsanaTest.swift */,
+			);
+			path = PragatiTests;
+			sourceTree = "<group>";
+		};
+		10C5E42F1A8072810071C934 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10C5E4301A8072810071C934 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10C5E4611A81D0340071C934 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10C05E7E1ABF775600BB7726 /* hdstd-funkyLegs.JPG */,
+				10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */,
+				1014755C1AAA414400EB3239 /* hdstd-rockies.JPG */,
+				1014755E1AAB45C600EB3239 /* wheel.png */,
+				10C5E4621A81D0340071C934 /* downwardFacingDog.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10D1B0CB1ACCE67F008217DA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				10C494AF1AC4F71700E27737 /* Pragati-Bridging-Header.h */,
+				10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */,
+				10D1B0C81ACCE5EE008217DA /* TriangleRight.h */,
+				10D1B0C91ACCE5EE008217DA /* TriangleRight.m */,
+				10D1B0C51ACCE5EE008217DA /* TriangleLeft.h */,
+				10D1B0C61ACCE5EE008217DA /* TriangleLeft.m */,
+				10D1B0C21ACCE5ED008217DA /* UpwardBowPose.h */,
+				10D1B0C31ACCE5ED008217DA /* UpwardBowPose.m */,
+				10C494B01AC4F71800E27737 /* DownwardFacingDog.h */,
+				10C494B11AC4F71800E27737 /* DownwardFacingDog.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10C5E4131A8072800071C934 /* Pragati */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C5E4351A8072810071C934 /* Build configuration list for PBXNativeTarget "Pragati" */;
+			buildPhases = (
+				10C5E4101A8072800071C934 /* Sources */,
+				10C5E4111A8072800071C934 /* Frameworks */,
+				10C5E4121A8072800071C934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pragati;
+			productName = Pragati;
+			productReference = 10C5E4141A8072800071C934 /* Pragati.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10C5E42A1A8072810071C934 /* PragatiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C5E4381A8072810071C934 /* Build configuration list for PBXNativeTarget "PragatiTests" */;
+			buildPhases = (
+				10C5E4271A8072810071C934 /* Sources */,
+				10C5E4281A8072810071C934 /* Frameworks */,
+				10C5E4291A8072810071C934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10C5E42D1A8072810071C934 /* PBXTargetDependency */,
+			);
+			name = PragatiTests;
+			productName = PragatiTests;
+			productReference = 10C5E42B1A8072810071C934 /* PragatiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10C5E40C1A8072800071C934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = LoveLeJess;
+				TargetAttributes = {
+					10C5E4131A8072800071C934 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = N993RX34M3;
+					};
+					10C5E42A1A8072810071C934 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 10C5E4131A8072800071C934;
+					};
+				};
+			};
+			buildConfigurationList = 10C5E40F1A8072800071C934 /* Build configuration list for PBXProject "Pragati" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10C5E40B1A8072800071C934;
+			productRefGroup = 10C5E4151A8072800071C934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10C5E4131A8072800071C934 /* Pragati */,
+				10C5E42A1A8072810071C934 /* PragatiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10C5E4121A8072800071C934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C5E4211A8072800071C934 /* Main.storyboard in Resources */,
+				10C5E4261A8072800071C934 /* LaunchScreen.xib in Resources */,
+				10C5E4631A81D0340071C934 /* downwardFacingDog.png in Resources */,
+				1014755D1AAA414400EB3239 /* hdstd-rockies.JPG in Resources */,
+				10C5E4231A8072800071C934 /* Images.xcassets in Resources */,
+				1014755F1AAB45C700EB3239 /* wheel.png in Resources */,
+				10C05E7F1ABF775600BB7726 /* hdstd-funkyLegs.JPG in Resources */,
+				10DEDCFD1AB7CB0500C4283F /* triangle.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C5E4291A8072810071C934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10C5E4101A8072800071C934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D1B0CA1ACCE5EE008217DA /* TriangleRight.m in Sources */,
+				10C5E4401A80794C0071C934 /* SampleData.swift in Sources */,
+				10C5E43E1A8078C80071C934 /* Asana.swift in Sources */,
+				10D1B0C41ACCE5ED008217DA /* UpwardBowPose.m in Sources */,
+				10D1B0D31AD5F093008217DA /* AsanaTableViewController.swift in Sources */,
+				10C712A41AAA39D0003CAE20 /* DisplayUserAsanaImageViewController.swift in Sources */,
+				10495F221ADAF27000C0E618 /* Utilities.swift in Sources */,
+				10C6C7781AC3798F009B274A /* Pragati.xcdatamodeld in Sources */,
+				10C5E41E1A8072800071C934 /* SecondViewController.swift in Sources */,
+				10C494B21AC4F71800E27737 /* DownwardFacingDog.m in Sources */,
+				10C05E7D1ABF65B200BB7726 /* AsanaPhoto.swift in Sources */,
+				10C712A21AA8F8C2003CAE20 /* UserPhotoCollectionViewCell.swift in Sources */,
+				10D1B0C71ACCE5EE008217DA /* TriangleLeft.m in Sources */,
+				10C5E4441A81BBAB0071C934 /* AsanaCell.swift in Sources */,
+				10C5E41A1A8072800071C934 /* AppDelegate.swift in Sources */,
+				10C712A01AA8ECBA003CAE20 /* UserPhotoCollectionViewController.swift in Sources */,
+				10C5E4691A81D4B20071C934 /* FirstViewController.swift in Sources */,
+				101475651AAD1F5300EB3239 /* AddUserPhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10C5E4271A8072810071C934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D1B0DD1AD5FFD3008217DA /* Asana.swift in Sources */,
+				10D1B0D91AD5F0F0008217DA /* AsanaTest.swift in Sources */,
+				10C5E4321A8072810071C934 /* PragatiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10C5E42D1A8072810071C934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10C5E4131A8072800071C934 /* Pragati */;
+			targetProxy = 10C5E42C1A8072810071C934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10C5E41F1A8072800071C934 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10C5E4201A8072800071C934 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10C5E4241A8072800071C934 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10C5E4251A8072800071C934 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10C5E4331A8072810071C934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10C5E4341A8072810071C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10C5E4361A8072810071C934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = Pragati/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pragati/Pragati-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10C5E4371A8072810071C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = Pragati/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pragati/Pragati-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		10C5E4391A8072810071C934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PragatiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pragati.app/Pragati";
+			};
+			name = Debug;
+		};
+		10C5E43A1A8072810071C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PragatiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pragati.app/Pragati";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10C5E40F1A8072800071C934 /* Build configuration list for PBXProject "Pragati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C5E4331A8072810071C934 /* Debug */,
+				10C5E4341A8072810071C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C5E4351A8072810071C934 /* Build configuration list for PBXNativeTarget "Pragati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C5E4361A8072810071C934 /* Debug */,
+				10C5E4371A8072810071C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C5E4381A8072810071C934 /* Build configuration list for PBXNativeTarget "PragatiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C5E4391A8072810071C934 /* Debug */,
+				10C5E43A1A8072810071C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10C6C7761AC3798F009B274A /* Pragati.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */,
+			);
+			currentVersion = 10C6C7771AC3798F009B274A /* Pragati.xcdatamodel */;
+			path = Pragati.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10C5E40C1A8072800071C934 /* Project object */;
+}
