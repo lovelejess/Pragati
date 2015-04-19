@@ -3,11 +3,21 @@ Given /^I launch the app$/ do
   sleep(STEP_PAUSE)
 end
 
-And /^I should see the Asanas List$/ do
-	asana_query = query("view UITableViewCell")
+And /^I see the Asanas List$/ do
 	asana_list = ["Adho Mukha Svanasana", "Urdhva Dhanursana", "Trikonasana (Left)", "Trikonasana (Right)"]
 	
-	for asana_index in 0..3
-		asana_list[asana_index] == asana_query[asana_index]["value"]
+	each_cell(:animate => false, :post_scroll=> 0.1) do |row,sec|
+		asana_cell = query("tableViewCell indexPath:#{row},#{sec} label", :text).first
+		asana_list[row] == asana_cell
  	end
+end
+
+And /^I select (.*) from the list$/ do |asana|
+	touch("tableViewCell text:'#{asana}'")
+end
+
+And /^I am on the (.*) photo collection$/ do |asana|
+	label("UILabel marked:'#{asana}")
+	sleep(1)
+	touch("UILabel marked:'Back'")
 end
