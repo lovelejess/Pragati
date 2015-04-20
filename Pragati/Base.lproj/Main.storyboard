@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -106,11 +106,11 @@
                             <outlet property="delegate" destination="m8p-RU-EtY" id="skv-YQ-GYK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Asanas List" id="hu8-EQ-OCL"/>
+                    <navigationItem key="navigationItem" title="Asanas" id="hu8-EQ-OCL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYK-j1-gZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="-336"/>
+            <point key="canvasLocation" x="1380" y="-337"/>
         </scene>
         <!--User Photo Collection View-->
         <scene sceneID="ATf-2R-q6K">
@@ -159,7 +159,8 @@
                             <outlet property="delegate" destination="hvO-1D-vOS" id="QSw-KJ-Ndq"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Title" id="nkk-9F-LEh">
+                    <navigationItem key="navigationItem" id="nkk-9F-LEh">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="8EK-iz-CTd"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
                             <connections>
                                 <segue destination="Eta-VZ-ClR" kind="presentation" identifier="AddPhotoToSelectedAsana" id="tXX-lo-svc"/>

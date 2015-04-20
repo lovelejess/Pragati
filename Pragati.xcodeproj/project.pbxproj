@@ -10,26 +10,27 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>051fdb3b32fdb3d486ca37f3</key>
+		<key>018af46772ce373cf59630d7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10C5E4431A81BBAB0071C934</string>
+			<string>10C05E7C1ABF65B200BB7726</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>09326367909bf1e7d77eb03d</key>
+		<key>0bb75c42a6189a1eed908599</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>cd326409fcc242e1f3d51a11</string>
-				<string>c3a2c04426d820383ba86bac</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>fileEncoding</key>
+			<string>4</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>calabash.framework</string>
+			<key>path</key>
+			<string>calabash.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1014755C1AAA414400EB3239</key>
 		<dict>
@@ -114,7 +115,7 @@
 			<key>children</key>
 			<array>
 				<string>7e798c5adb7d451f07c714e1</string>
-				<string>52896627cdd6528c9e9afc3e</string>
+				<string>0bb75c42a6189a1eed908599</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -274,7 +275,7 @@
 			<array>
 				<string>10C5E4131A8072800071C934</string>
 				<string>10C5E42A1A8072810071C934</string>
-				<string>60cb0ba27e18bd9815afe49c</string>
+				<string>bbcb2b198962418df2a040a6</string>
 			</array>
 		</dict>
 		<key>10C5E40F1A8072800071C934</key>
@@ -1427,279 +1428,42 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>146107eb192ea62670c903ac</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10D1B0C61ACCE5EE008217DA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>15369b7688a2cf328bcedfbb</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C712A11AA8F8C2003CAE20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>178f6354af19b6d7de8484aa</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E4681A81D4B20071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1d0562bce4a9b1088bbb0232</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10DEDCFC1AB7CB0500C4283F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>246203ab5204bf3bd72e391a</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1014755C1AAA414400EB3239</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>263a3e96d84dba85c4b04972</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E4621A81D0340071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>43b9003990674323bd620f77</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C05E7E1ABF775600BB7726</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>502a6343a5e8d63627abfa53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9eb190e7d6ca22b18a3f6572</string>
-				<string>a06ef11afbef9e1690a37f67</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>52896627cdd6528c9e9afc3e</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>calabash.framework</string>
-			<key>path</key>
-			<string>calabash.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52be9a4cc1aa7d23eaaa0de6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10495F211ADAF27000C0E618</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>60cb0ba27e18bd9815afe49c</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>09326367909bf1e7d77eb03d</string>
-			<key>buildPhases</key>
-			<array>
-				<string>aa151cf1e456c94e05e37551</string>
-				<string>502a6343a5e8d63627abfa53</string>
-				<string>b68c9e552cf7ee994bdd1c27</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pragati-cal</string>
-			<key>productName</key>
-			<string>Pragati-cal</string>
-			<key>productReference</key>
-			<string>9246dcd0d64c4cde6b432fa4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6e6bf50d8fe750f68b39874c</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E41F1A8072800071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>74f6ffb25bd65e2e6a8d2c25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E43F1A80794C0071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>755ad4787d9626e804f2b8ea</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E4191A8072800071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7e798c5adb7d451f07c714e1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CFNetwork.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CFNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>8dcc779b0e7359f8fc906bfe</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E41D1A8072800071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9246dcd0d64c4cde6b432fa4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pragati-cal.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9eb190e7d6ca22b18a3f6572</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7e798c5adb7d451f07c714e1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>a06ef11afbef9e1690a37f67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52896627cdd6528c9e9afc3e</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>a3e5348007c7e85c424db660</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10D1B0C91ACCE5EE008217DA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>aa151cf1e456c94e05e37551</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>a3e5348007c7e85c424db660</string>
-				<string>74f6ffb25bd65e2e6a8d2c25</string>
-				<string>c1920744044c849a8dce7296</string>
-				<string>b120853433d40cff5eef3f75</string>
-				<string>bc38f48a7e5a80065d3e7b07</string>
-				<string>dfdad977a5a7d9efb210d8f8</string>
-				<string>52be9a4cc1aa7d23eaaa0de6</string>
-				<string>ab1717b6fcc627bed08e738f</string>
-				<string>8dcc779b0e7359f8fc906bfe</string>
-				<string>c393001a2baf516dbe99ce45</string>
-				<string>dfcdfadc255b15c6e5d52093</string>
-				<string>15369b7688a2cf328bcedfbb</string>
-				<string>146107eb192ea62670c903ac</string>
-				<string>051fdb3b32fdb3d486ca37f3</string>
-				<string>755ad4787d9626e804f2b8ea</string>
-				<string>d0fa1e3c260bc44bfcb1034a</string>
-				<string>178f6354af19b6d7de8484aa</string>
-				<string>d3e64cd57312f01145d6d7e5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>ab1717b6fcc627bed08e738f</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C6C7761AC3798F009B274A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>b120853433d40cff5eef3f75</key>
+		<key>1751b0ea5681de8e1f07b2d1</key>
 		<dict>
 			<key>fileRef</key>
 			<string>10D1B0C31ACCE5ED008217DA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>b68c9e552cf7ee994bdd1c27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6e6bf50d8fe750f68b39874c</string>
-				<string>f81d3634253674b3d6fc44ba</string>
-				<string>263a3e96d84dba85c4b04972</string>
-				<string>246203ab5204bf3bd72e391a</string>
-				<string>f866d9f79b1704f57562ce69</string>
-				<string>d5be0fbaecf429541b6ec736</string>
-				<string>43b9003990674323bd620f77</string>
-				<string>1d0562bce4a9b1088bbb0232</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>bc38f48a7e5a80065d3e7b07</key>
+		<key>17941ce48008047ae511761f</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10C5E43B1A8078890071C934</string>
+			<string>10C5E4431A81BBAB0071C934</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>c1920744044c849a8dce7296</key>
+		<key>1dc381c34cd4ab7d32335dcb</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10C5E43D1A8078C80071C934</string>
+			<string>10D1B0C91ACCE5EE008217DA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>c393001a2baf516dbe99ce45</key>
+		<key>1de4be14ebfa246e531643f9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10C494B11AC4F71800E27737</string>
+			<string>10495F211ADAF27000C0E618</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>c3a2c04426d820383ba86bac</key>
+		<key>2d032fc68d5264464a512b9c</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C05E7E1ABF775600BB7726</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>41ba82684a4149af0e0507fc</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -1735,7 +1499,278 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>cd326409fcc242e1f3d51a11</key>
+		<key>45cec15f7fee1bb0626d26fd</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C712A11AA8F8C2003CAE20</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>46e4ab70497e529d5faa3116</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10D1B0C61ACCE5EE008217DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>59836de3798e2d4884af6766</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E43B1A8078890071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>646b2fd8bb48ece862ff3389</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C6C7761AC3798F009B274A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6be2e0a5882ea86ad976593b</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1014755C1AAA414400EB3239</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6eb69948be8801cfba9ba4fb</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0bb75c42a6189a1eed908599</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>75b3674a64f721a5d1ad3395</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pragati-cal.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7bb6f9512b4dcff62288c202</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E43D1A8078C80071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7e798c5adb7d451f07c714e1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>86714daa31896a188fc83660</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>86766e27312e0f0288cdb447</string>
+				<string>6eb69948be8801cfba9ba4fb</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>86766e27312e0f0288cdb447</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7e798c5adb7d451f07c714e1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>90c05ef5631562195be2444a</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E4681A81D4B20071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9453f5b09882933ac593b4f5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C7129F1AA8ECBA003CAE20</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>973c8bab02b12467f7af7052</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E4241A8072800071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>a75a5b4cc06c130ecadb4039</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E41D1A8072800071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>aaae07be5e28f547cf5606b6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E4221A8072800071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>bbcb2b198962418df2a040a6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>c76ae4a290bd3345fa2dd9c2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>d4f9f3f17e0714c921e5c1c2</string>
+				<string>86714daa31896a188fc83660</string>
+				<string>db4130256f4b3f3c450cfdea</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pragati-cal</string>
+			<key>productName</key>
+			<string>Pragati-cal</string>
+			<key>productReference</key>
+			<string>75b3674a64f721a5d1ad3395</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>c76ae4a290bd3345fa2dd9c2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>fb0101a2e76a7012bb0786a5</string>
+				<string>41ba82684a4149af0e0507fc</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>cad0dd81738696fca9ca4854</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10DEDCFC1AB7CB0500C4283F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>cbf48046a1cff0fe4ba9a0ed</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E41F1A8072800071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>cd9091cbf56a0c531b1feb04</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C712A31AAA39D0003CAE20</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>d3304cc9b88ab9f9020e8726</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C494B11AC4F71800E27737</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>d4f9f3f17e0714c921e5c1c2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1dc381c34cd4ab7d32335dcb</string>
+				<string>fc23197aa3307afcaea40903</string>
+				<string>7bb6f9512b4dcff62288c202</string>
+				<string>1751b0ea5681de8e1f07b2d1</string>
+				<string>59836de3798e2d4884af6766</string>
+				<string>cd9091cbf56a0c531b1feb04</string>
+				<string>1de4be14ebfa246e531643f9</string>
+				<string>646b2fd8bb48ece862ff3389</string>
+				<string>a75a5b4cc06c130ecadb4039</string>
+				<string>d3304cc9b88ab9f9020e8726</string>
+				<string>018af46772ce373cf59630d7</string>
+				<string>45cec15f7fee1bb0626d26fd</string>
+				<string>46e4ab70497e529d5faa3116</string>
+				<string>17941ce48008047ae511761f</string>
+				<string>e2c0ba7d541b2cffb77b0f0e</string>
+				<string>9453f5b09882933ac593b4f5</string>
+				<string>90c05ef5631562195be2444a</string>
+				<string>fc9a9a02789de23d276dd154</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>db4130256f4b3f3c450cfdea</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>cbf48046a1cff0fe4ba9a0ed</string>
+				<string>973c8bab02b12467f7af7052</string>
+				<string>e9bf7021a59635d46f8f4d80</string>
+				<string>6be2e0a5882ea86ad976593b</string>
+				<string>aaae07be5e28f547cf5606b6</string>
+				<string>f1fe88a8662bd8585b02abd2</string>
+				<string>2d032fc68d5264464a512b9c</string>
+				<string>cad0dd81738696fca9ca4854</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>e2c0ba7d541b2cffb77b0f0e</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E4191A8072800071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>e9bf7021a59635d46f8f4d80</key>
+		<dict>
+			<key>fileRef</key>
+			<string>10C5E4621A81D0340071C934</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>f1fe88a8662bd8585b02abd2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1014755E1AAB45C600EB3239</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>fb0101a2e76a7012bb0786a5</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -1773,52 +1808,17 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>d0fa1e3c260bc44bfcb1034a</key>
+		<key>fc23197aa3307afcaea40903</key>
 		<dict>
 			<key>fileRef</key>
-			<string>10C7129F1AA8ECBA003CAE20</string>
+			<string>10C5E43F1A80794C0071C934</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>d3e64cd57312f01145d6d7e5</key>
+		<key>fc9a9a02789de23d276dd154</key>
 		<dict>
 			<key>fileRef</key>
 			<string>101475641AAD1F5300EB3239</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>d5be0fbaecf429541b6ec736</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1014755E1AAB45C600EB3239</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>dfcdfadc255b15c6e5d52093</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C05E7C1ABF65B200BB7726</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>dfdad977a5a7d9efb210d8f8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C712A31AAA39D0003CAE20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>f81d3634253674b3d6fc44ba</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E4241A8072800071C934</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>f866d9f79b1704f57562ce69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>10C5E4221A8072800071C934</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

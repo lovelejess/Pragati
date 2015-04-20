@@ -87,6 +87,7 @@
 		10D1B0C91ACCE5EE008217DA /* TriangleRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRight.m; sourceTree = "<group>"; };
 		10D1B0CC1ACE29D9008217DA /* AsanaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsanaTest.swift; sourceTree = "<group>"; };
 		10DEDCFC1AB7CB0500C4283F /* triangle.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = triangle.jpeg; path = ../triangle.jpeg; sourceTree = "<group>"; };
+		7e798c5adb7d451f07c714e1 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		1076FE111AE097260080A7BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7e798c5adb7d451f07c714e1 /* CFNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

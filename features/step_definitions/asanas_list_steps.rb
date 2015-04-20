@@ -14,10 +14,11 @@ end
 
 And /^I select (.*) from the list$/ do |asana|
 	touch("tableViewCell text:'#{asana}'")
+	sleep(2)
 end
 
 And /^I am on the (.*) photo collection$/ do |asana|
 	label("UILabel marked:'#{asana}")
-	sleep(1)
-	touch("UILabel marked:'Back'")
+	sleep(2)
+	touch("UILabel marked:'Asanas'")
 end
