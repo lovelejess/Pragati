@@ -19,6 +19,6 @@ end
 
 And /^I am on the (.*) photo collection$/ do |asana|
 	label("UILabel marked:'#{asana}")
-	sleep(2)
-	touch("UILabel marked:'Asanas'")
+	sleep(5)
+	#touch("UILabel marked:'Asanas'")
 end

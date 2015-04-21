@@ -161,7 +161,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="nkk-9F-LEh">
                         <barButtonItem key="backBarButtonItem" title="Back" id="8EK-iz-CTd"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZE-yz-slZ">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="EZE-yz-slZ">
                             <connections>
                                 <segue destination="Eta-VZ-ClR" kind="presentation" identifier="AddPhotoToSelectedAsana" id="tXX-lo-svc"/>
                             </connections>
