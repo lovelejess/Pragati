@@ -8,13 +8,12 @@ And /^I can select a photo from my photo album$/ do
 	query("UINavigationItemView  marked:'Add a Photo'")
 	touch("UINavigationButton  marked:'Share'")
 	touch("PUAlbumListCellContentView marked:'Moments'")
-	print touch("PUAlbumListCellContentView marked:'Moments'")
-	print("\n\n\n\n")
-	sleep(2)
-	touch(nil, :offset => {:x=>80.5, :y=>57.5})
+	sleep(5)
+	touch("PUPhotosGridCell marked:'Photo, Landscape, July 13, 2014, 11:28 PM'")
+	sleep(5)
 end
 
 And /^I can save that photo$/ do
-	pending
+	sleep(3)
 	touch("UIButtonLabel marked:'Save'")
 end
